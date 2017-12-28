@@ -15,19 +15,19 @@ class NavBar extends Component {
                             <div className="collapse navbar-collapse" id="navbarCollapse">
                             <ul className="navbar-nav ml-auto"> 
                                     <li className="nav-item">
-                                        <NavLink exact activeStyle={{fontWeight: 'bold',color: '#CFC'}} activeClassName="selected" to="/" className="nav-link"><i className="fa fa-home"></i> Home</NavLink>
+                                        <NavLink exact activeClassName="selected text-info" to="/" className="nav-link"><i className="fa fa-home"></i> Home</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink exact activeStyle={{fontWeight: 'bold',color: '#CFC'}} activeClassName="selected" to="/resume" className="nav-link"><i className="fa fa-graduation-cap"></i> Resume</NavLink>
+                                        <NavLink exact activeClassName="selected text-info" to="/resume" className="nav-link"><i className="fa fa-graduation-cap"></i> Resume</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink exact activeStyle={{fontWeight: 'bold',color: '#CFC'}} activeClassName="selected" to="/work" className="nav-link"><i className="fa fa-folder-open"></i> Work</NavLink>
+                                        <NavLink exact activeClassName="selected text-info" to="/portfolio" className="nav-link"><i className="fa fa-folder-open"></i> Portfolio</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink exact activeStyle={{fontWeight: 'bold',color: '#CFC'}} activeClassName="selected" to="/contact" className="nav-link"><i className="fa fa-envelope"></i> contact</NavLink>
+                                        <NavLink exact activeClassName="selected text-info" to="/contact" className="nav-link"><i className="fa fa-envelope"></i> contact</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink exact activeStyle={{fontWeight: 'bold',color: '#CFC'}} activeClassName="selected" to="/blog" className="nav-link"><i className="fa fa-pencil"></i> Blog</NavLink>
+                                        <NavLink exact activeClassName="selected text-info" to="/blog" className="nav-link"><i className="fa fa-pencil"></i> Blog</NavLink>
                                         </li>
                                     </ul>
                                 </div>
