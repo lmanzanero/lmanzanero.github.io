@@ -1,11 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from 'react'; 
 import './App.css';
+import NavBar from './components/layout/NavBar';
+import MainSection from './components/layout/MainSection';
 
-function App() {
+const App = () =>{
   return (
-    <div className="App">
-       <h1>Luis Manzanero's Portfolio</h1>
+    <div className="mainContainer">
+       <NavBar/>
+      <MainSection/>
     </div>
   );
 }
