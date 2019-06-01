@@ -1,11 +1,16 @@
-import React from 'react';  
+import React, {useState} from 'react';  
 
 const NavBar = () =>{
+  const [toggleState, setToggleState] = useState('');
+
+  const toggle = () => {
+    setToggleState(toggleState === 'side-nav' ? '' : 'side-nav');
+  }
+
   return (
         <React.Fragment>
-           <button className="nav-icon">Menu</button>
-           {/* todo: Toggle class side-nav for mobile responsiveness and add margin to offset mainsection*/}
-            <nav className="navSection side-nav">Nav Section</nav>
+           <button className="nav-icon" onClick={toggle}>Menu</button> 
+            <nav className={`navSection ${toggleState}`}>Nav Section</nav>
         </React.Fragment>
   );
 }
