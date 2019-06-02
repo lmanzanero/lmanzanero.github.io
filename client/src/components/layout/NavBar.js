@@ -1,5 +1,5 @@
 import React from 'react';  
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 
 const NavBar = () =>{
   // const [toggleState, setToggleState] = useState('navSection');
@@ -14,10 +14,10 @@ const NavBar = () =>{
             <button className="nav-icon" onClick={toggle}>Menu</button> 
             <nav className='navSection'>
               <div className="authorImage">
-                <img alt="Luis Manzanero" src="../../../public/favicon.ico"/>
+                <img alt="Luis Manzanero" src="/luis.jpg"/>
               </div>
               <h1>Luis Manzanero</h1>
-              <span><a href="#luis">Environmental Scientist, GIS Specialist, Software Developer</a></span>
+              <span>Environmental Scientist, GIS Specialist, & Software Developer from Belize</span>
               <div className="navBar">
                 <ul>
                   <li className="navItem"><Link to="/">Home</Link></li>
@@ -26,7 +26,17 @@ const NavBar = () =>{
                   <li className="navItem"><Link to="/contact">Contact</Link></li>
                 </ul>
               </div>
-              <footer>All Rights Reserved to Luis Manzanero</footer>
+              <footer>
+                <div className="social-links">
+                    <ul>
+                      <li><a href="#github"><i class="icon ion-social-github"></i></a></li>
+                      <li><a href="#github"><i class="icon ion-social-facebook"></i></a></li>
+                      <li><a href="#github"><i class="icon ion-social-linkedin"></i></a></li>
+                      <li><a href="#github"><i class="icon ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <p>All Rights Reserved to Luis Manzanero</p>
+              </footer>
             </nav>
             
         </React.Fragment>
