@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 const admin = require('./api/routes/admin');
 const dashboard = require('./api/routes/dashboard');
 const posts = require('./api/routes/posts');
@@ -8,6 +9,17 @@ const posts = require('./api/routes/posts');
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+//db
+
+const db = require('./config/keys').mongoURI;
+
+console.log(db);
+
+//connect to mongoose
+mongoose.connect(db, { useNewUrlParser: true})
+        .then(() => console.log('Connected to luisportfolio db'))
+        .catch(err => console.log(err));
 
 // Use Routes
 app.use('/api/admin', admin);

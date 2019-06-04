@@ -1,9 +1,14 @@
+body {
+  background-color: #2a2e31;
+  font-family: monospace;
+  color: antiquewhite;
+}
+
 .mainContainer{
   display: grid;
   justify-content: center;
   grid-template-columns: 300px 2fr; 
-  height: 100vh;
-  background-color: red;
+  height: 100vh; 
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -11,9 +16,7 @@
 .navSection {
   position: relative;
   background-color: #273747;
-  color: antiquewhite;
-  height: 100%;   
-  font-family: monospace;
+  height: 100%;    
   text-align: center;
   margin: 0 auto;
 }
@@ -23,7 +26,8 @@
 }
 
 .mainSection {
-  background-color: #f2f3f7;;
+  position: relative;
+  background-color: #191c20;; 
   height: 100%;
 }
 
@@ -100,6 +104,26 @@ footer .social-links ul li a:hover {
 
 footer p {
   font-size: 12px;
+}
+
+/* Admin Form */
+form { 
+  position: relative;
+  align-content: center;
+  width: 500px;
+  height: 500px; 
+  top: 20%;
+  border: 2px solid red;
+  margin: 0 auto;
+}
+
+form input {
+  position: relative;
+  width: 400px;
+  top: 30%;
+  padding: 12px 20px; 
+  margin: 0 auto;
+  display: block;
 }
 /* Mobile Responsive */
 

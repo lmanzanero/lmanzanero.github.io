@@ -29,10 +29,10 @@ const NavBar = () =>{
               <footer>
                 <div className="social-links">
                     <ul>
-                      <li><a href="#github"><i class="icon ion-social-github"></i></a></li>
-                      <li><a href="#github"><i class="icon ion-social-facebook"></i></a></li>
-                      <li><a href="#github"><i class="icon ion-social-linkedin"></i></a></li>
-                      <li><a href="#github"><i class="icon ion-social-instagram"></i></a></li>
+                      <li><a href="#github"><i className="icon ion-social-github"></i></a></li>
+                      <li><a href="#github"><i className="icon ion-social-facebook"></i></a></li>
+                      <li><a href="#github"><i className="icon ion-social-linkedin"></i></a></li>
+                      <li><a href="#github"><i className="icon ion-social-instagram"></i></a></li>
                     </ul>
                 </div>
                 <p>All Rights Reserved to Luis Manzanero</p>
