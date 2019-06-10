@@ -11,6 +11,8 @@ import About from './components/pages/About';
 import Blog from './components/pages/Blog';
 import Contact from './components/pages/Contact';
 import Admin from './components/pages/Admin';
+import Projects from './components/pages/Projects';
+import Education from './components/pages/Education';
 
 const App = () =>{
   return (
@@ -20,6 +22,8 @@ const App = () =>{
         <main className="mainSection">
         <Route exact path='/' component={Home}></Route>
         <Route exact path='/about' component={About}></Route>
+        <Route exact path='/education' component={Education}></Route>
+        <Route exact path='/projects' component={Projects}></Route>
         <Route exact path='/blog' component={Blog}></Route>
         <Route exact path='/Contact' component={Contact}></Route>
         <Route exact path='/admin' component={Admin}></Route>

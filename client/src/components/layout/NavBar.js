@@ -1,18 +1,18 @@
 import React from 'react';  
 import { Link } from 'react-router-dom'; 
 
-const NavBar = () =>{
-  // const [toggleState, setToggleState] = useState('navSection');
+  const NavBar = () =>{
+    // const [toggleState, setToggleState] = useState('navSection');
 
   const toggle = () => {
-    // setToggleState(toggleState === 'side-nav' ? 'navSection' : 'side-nav');
-    console.log('Functionality to toggle main and side nav');
-  }
+      // setToggleState(toggleState === 'side-nav' ? 'navSection' : 'side-nav');
+      console.log('Functionality to toggle main and side nav');
+    }
 
   return (
         <React.Fragment>
             <button className="nav-icon" onClick={toggle}>Menu</button> 
-            <nav className='navSection'>
+            <nav className='navSection side-nav'>
               <div className="authorImage">
                 <img alt="Luis Manzanero" src="/luis.jpg"/>
               </div>
@@ -22,6 +22,8 @@ const NavBar = () =>{
                 <ul>
                   <li className="navItem"><Link to="/">Home</Link></li>
                   <li className="navItem"><Link to="/about">About</Link></li>
+                  <li className="navItem"><Link to="/education">Education</Link></li>
+                  <li className="navItem"><Link to="/projects">Projects</Link></li>
                   <li className="navItem"><Link to="/blog">Blog</Link></li>
                   <li className="navItem"><Link to="/contact">Contact</Link></li>
                 </ul>
