@@ -14,11 +14,9 @@ app.use(bodyParser.json());
 
 const db = require('./config/keys').mongoURI;
 
-console.log(db);
-
 //connect to mongoose
 mongoose.connect(db, { useNewUrlParser: true})
-        .then(() => console.log('Connected to luisportfolio db'))
+        .then(() => console.log('Connected to lmanzanero db'))
         .catch(err => console.log(err));
 
 // Use Routes
