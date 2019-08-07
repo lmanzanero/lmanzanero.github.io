@@ -22,7 +22,7 @@ import { Link } from 'react-router-dom';
                 <ul>
                   <li className="navItem"><Link to="/">Home</Link></li>
                   <li className="navItem"><Link to="/about">About</Link></li>
-                  <li className="navItem"><Link to="/education">Education</Link></li>
+                  <li className="navItem"><Link to="/resume">Resume</Link></li>
                   <li className="navItem"><Link to="/projects">Projects</Link></li>
                   <li className="navItem"><Link to="/blog">Blog</Link></li>
                   <li className="navItem"><Link to="/contact">Contact</Link></li>
