@@ -170,6 +170,21 @@ footer p {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+
+/* Resume */
+.work-item {
+  position: relative;
+  width: 700px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #273747;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.work-item .work-item-inner {
+  padding: 20px;
+}
+
 /* Admin Form */
 form { 
   position: relative;
