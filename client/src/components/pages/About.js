@@ -9,19 +9,19 @@ const About = () =>{
 
         <div className="flex-container">
           <div className="services">
-            <icon>Icon</icon>
+            <i>Icon</i>
             <h3>Software Development</h3>
           </div>
           <div className="services">
-            <icon>Icon</icon>
+            <i>Icon</i>
             <h3>Web Design</h3>
           </div>
           <div className="services">
-            <icon>Icon</icon>
+            <i>Icon</i>
             <h3>Web Design</h3>
           </div>
           <div className="services">
-            <icon>Icon</icon>
+            <i>Icon</i>
             <h3>Mobile Development</h3>
           </div>
         </div>
