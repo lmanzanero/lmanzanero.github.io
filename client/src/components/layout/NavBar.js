@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
             <button className="nav-icon" onClick={toggle}>Menu</button> 
             <nav className='navSection side-nav'>
               <div className="authorImage">
-                <img alt="Luis Manzanero" src="/luis.jpg"/>
+                <img alt="Luis Manzanero" src="luis.jpg"/>
               </div>
               <h1>Luis Manzanero</h1>
               <p>Environmental Scientist, Innovator, & Software Developer from Belize</p>
