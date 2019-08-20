@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
                 <img alt="Luis Manzanero" src="/luis.jpg"/>
               </div>
               <h1>Luis Manzanero</h1>
-              <span>Environmental Scientist, GIS Specialist, & Software Developer from Belize</span>
+              <p>Environmental Scientist, Innovator, & Software Developer from Belize</p>
               <div className="navBar">
                 <ul>
                   <li className="navItem"><Link to="/">Home</Link></li>

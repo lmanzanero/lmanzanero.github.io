@@ -50,6 +50,11 @@ body {
   object-fit: cover;
 }
 
+.navSection p {
+  margin: 0 auto;
+  width: 250px; 
+}
+
 .navBar { 
   line-height: 30px; 
   margin: 30px 0 30px 0;
