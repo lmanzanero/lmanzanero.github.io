@@ -1,10 +1,16 @@
 import React from 'react';  
+import { Helmet } from 'react-helmet';
 
 const Resume = () =>{
   return (
     <div className="resume-page">
+        <Helmet>
+          <title>Resume | Luis Manzanero</title>
+          <meta name="description" content="I have a bachelors Degree in Enviornmetal Science and 5+ years as a software developer" />
+          <meta name="keywords" content="Bachelors Degree, GIS Specialist, Data Scientist, Web Developer, Guitarist, Adenturist, Innovator, Software Developer" />
+        </Helmet>
         <div className="resume-header">
-          <h1><i>Icon </i>Work Experience</h1>
+          <h1><i> Icon </i>Work Experience</h1>
         </div>
         <div className="work-section">
           <article className="work-item">

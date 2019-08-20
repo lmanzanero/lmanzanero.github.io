@@ -1,5 +1,6 @@
 import React from 'react'; 
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import './App.css';
 
 //components 
@@ -18,6 +19,12 @@ const App = () =>{
   return (
     <Router>
       <div className="mainContainer">
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Luis Manzanero | Environmental Scientist, Innovator, Software Developer from Belize</title> 
+            <meta name="description" content="I'm an aspiring environmental scientist, Innovator, and Software Developer from Belize. My goal is to preserve and protect our natural resources with the power of technology" />
+            <meta name="keywords" content="Luis Manzanero, Environmental Scientist, Innovator, Software Developer, Web Developer, Android Developer, Kotlin Developer, Web Design Services" />
+        </Helmet>
         <NavBar/>
         <main className="mainSection">
         <Route exact path='/' component={Home}></Route>
