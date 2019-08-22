@@ -233,6 +233,60 @@ footer p {
     margin-top: -15px; 
 }
 
+.projects-page {
+  position: relative; 
+  height: 100vh;
+}
+
+.projects-options { 
+  padding: 2em;
+}
+
+.projects-options ul { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects-options ul li {
+  display: inline;
+  margin: 4%;
+}
+
+.project-items {
+  display: flex;
+  flex-wrap: wrap;  
+  align-content: space-between;
+}
+
+.project-item {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  background: #273747;
+  margin: 10px auto;
+}
+
+.project-inner {
+  padding: 2em;
+}
+
+.project-inner .title {
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.project-inner .category {
+  padding: 5px 0;
+}
+
+.project-inner .links { 
+  position: absolute;
+  bottom: 5%;
+}
+
+
+
 /* Admin Form */
 form { 
   position: relative;
