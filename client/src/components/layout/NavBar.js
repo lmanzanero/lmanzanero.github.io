@@ -1,18 +1,35 @@
-import React from 'react';  
+import React, { useState } from 'react';  
 import { Link } from 'react-router-dom'; 
 
   const NavBar = () =>{
-    // const [toggleState, setToggleState] = useState('navSection');
+    const [toggleState, setToggleState] = useState(false);
 
-  const toggle = () => {
-      // setToggleState(toggleState === 'side-nav' ? 'navSection' : 'side-nav');
-      console.log('Functionality to toggle main and side nav');
+    const toggle = () => {
+        setToggleState(toggleState === false ? openSideNav() : closeSideNav());
+      }
+
+    const openSideNav = () => {
+      //Add margin and width
+      console.log('opening nav');
+      document.querySelector("#navSection").style.width = "300px";
+      document.querySelector("#navSection").style.marginLeft = "0";
+      document.querySelector(".mainSection").style.marginLeft = "300px";
+      return true;
+    }
+
+    const closeSideNav = () => {
+      //remove margin and width
+      document.querySelector("#navSection").style.width = "0";
+      document.querySelector("#navSection").style.marginLeft = "-300px";
+      document.querySelector(".mainSection").style.marginLeft = "0";
+      console.log("closing Side Nave"); 
+      return false;
     }
 
   return (
         <React.Fragment>
             <button className="nav-icon" onClick={toggle}>Menu</button> 
-            <nav className='navSection side-nav'>
+            <nav id="navSection" className="sideNav">
               <div className="authorImage">
                 <img alt="Luis Manzanero" src="luis.jpg"/>
               </div>

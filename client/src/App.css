@@ -13,8 +13,9 @@ body {
   margin: 0 auto;
 }
 
-.navSection {
+#navSection {
   position: fixed; 
+  z-index: 1;
   top: 0;
   left: 0; 
   background-color: #273747;
@@ -22,7 +23,12 @@ body {
   width: 300px; 
   text-align: center; 
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: 0.5s all;
 }
+
+/* .navSection.side-nav {
+  margin-left: -300px;
+} */
 
 .nav-icon {
   display: none;
@@ -492,11 +498,13 @@ footer p {
   z-index: 3000;
   }
 
-  .navSection{
+  #navSection {
     margin-left: -300px;
+    transition: 0.5s all;
   }
 
-  .mainSection {
+.mainSection {
     margin-left: 0;
+    transition: 0.5s all;
   }
 }
