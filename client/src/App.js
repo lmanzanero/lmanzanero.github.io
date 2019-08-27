@@ -17,8 +17,7 @@ import Resume from './components/pages/Resume';
 
 const App = () =>{
   return (
-    <Router>
-      <div className="mainContainer">
+    <Router> 
         <Helmet>
             <meta charSet="utf-8" />
             <title>Luis Manzanero | Environmental Scientist, Innovator, Software Developer from Belize</title> 
@@ -34,8 +33,7 @@ const App = () =>{
         <Route exact path='/blog' component={Blog}></Route>
         <Route exact path='/contact' component={Contact}></Route>
         <Route exact path='/admin' component={Admin}></Route>
-        </main>  
-      </div>
+        </main>   
     </Router>
   );
 }

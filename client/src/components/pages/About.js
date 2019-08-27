@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 const About = () =>{
   return (
-    <div className="about-page">
+    <div className="about page">
         <Helmet>
           <title>About me | Luis Manzanero</title>
           <meta name="description" content="I believe I'm one of the most versatile individuals that exists, and it has been been a personal goal of mine to be so; ultimatley, use every skill possible to safe our planet" />

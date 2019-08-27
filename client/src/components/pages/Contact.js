@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () =>{
   return (
-    <div className="contact-page">
+    <div className="contact page">
         <h1 className="brand"><span>Lets Work Together</span></h1>
         <div className="wrapper animated bounceInLeft">
           <div className="company-info">
@@ -13,7 +13,7 @@ const Contact = () =>{
                 <li><i className="fa fa-envelope"></i> test@acme.test</li>
               </ul>
           </div>
-          <div className="contact">
+          <div className="contact-info">
               <h3>Email Us</h3>
               <form>
                 <p>

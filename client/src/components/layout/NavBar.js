@@ -27,9 +27,9 @@ import { Link } from 'react-router-dom';
     }
 
   return (
-        <React.Fragment>
+        <div id="navSection" className="sideNav">
             <button className="nav-icon" onClick={toggle}>Menu</button> 
-            <nav id="navSection" className="sideNav">
+            <nav>
               <div className="authorImage">
                 <img alt="Luis Manzanero" src="luis.jpg"/>
               </div>
@@ -57,8 +57,7 @@ import { Link } from 'react-router-dom';
                 <p>All Rights Reserved to Luis Manzanero</p>
               </footer>
             </nav>
-            
-        </React.Fragment>
+        </div>
   );
 }
 

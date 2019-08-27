@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 const Resume = () =>{
   return (
-    <div className="resume-page">
+    <div className="resume page">
         <Helmet>
           <title>Resume | Luis Manzanero</title>
           <meta name="description" content="I have a bachelors Degree in Enviornmetal Science and 5+ years as a software developer" />
