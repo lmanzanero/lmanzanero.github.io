@@ -8,6 +8,11 @@ import { Link } from 'react-router-dom';
         setToggleState(toggleState === false ? openSideNav() : closeSideNav());
       }
 
+    // const navItems = document.querySelectorAll('.navItem');
+    // navItems.forEach(item => {
+    //     item.addEventListener('click', console.log(item))
+    // });
+
     const openSideNav = () => {
       //Add margin and width
       console.log('opening nav');
@@ -37,12 +42,12 @@ import { Link } from 'react-router-dom';
               <p>Environmental Scientist, Innovator, & Software Developer from Belize</p>
               <div className="navBar">
                 <ul>
-                  <li className="navItem"><Link to="/">Home</Link></li>
-                  <li className="navItem"><Link to="/about">About</Link></li>
-                  <li className="navItem"><Link to="/resume">Resume</Link></li>
-                  <li className="navItem"><Link to="/projects">Projects</Link></li>
-                  <li className="navItem"><Link to="/blog">Blog</Link></li>
-                  <li className="navItem"><Link to="/contact">Contact</Link></li>
+                  <li className="navItem" onClick={toggle}><Link to="/">Home</Link></li>
+                  <li className="navItem" onClick={toggle}><Link to="/about">About</Link></li>
+                  <li className="navItem" onClick={toggle}><Link to="/resume">Resume</Link></li>
+                  <li className="navItem" onClick={toggle}><Link to="/projects">Projects</Link></li>
+                  <li className="navItem" onClick={toggle}><Link to="/blog">Blog</Link></li>
+                  <li className="navItem" onClick={toggle}><Link to="/contact">Contact</Link></li>
                 </ul>
               </div>
               <footer>
