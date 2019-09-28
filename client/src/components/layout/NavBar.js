@@ -5,17 +5,15 @@ import { Link } from 'react-router-dom';
     const [toggleState, setToggleState] = useState(false);
 
     const toggle = () => {
-        setToggleState(toggleState === false ? openSideNav() : closeSideNav());
-      }
-
-    // const navItems = document.querySelectorAll('.navItem');
-    // navItems.forEach(item => {
-    //     item.addEventListener('click', console.log(item))
-    // });
+        const { innerWidth} = window; 
+        //ensures that toggle only works when screen width is less than 750px's
+        if(innerWidth < 750){
+          setToggleState(toggleState === false ? openSideNav() : closeSideNav());
+        }
+      } 
 
     const openSideNav = () => {
-      //Add margin and width
-      console.log('opening nav');
+      //Add margin and width 
       document.querySelector("#navSection").style.width = "300px";
       document.querySelector("#navSection").style.marginLeft = "0";
       document.querySelector(".mainSection").style.marginLeft = "300px";
