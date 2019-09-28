@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
   const NavBar = () =>{
     const [toggleState, setToggleState] = useState(false);
 
-    const toggle = () => {
+    const toggleMenu = () => {
         const { innerWidth} = window; 
         //ensures that toggle only works when screen width is less than 750px's
         if(innerWidth < 750){
-          setToggleState(toggleState === false ? openSideNav() : closeSideNav());
+          setToggleState(toggleState === false ? openSideNav() : closeSideNav()); 
+          document.querySelector(".navIconContainer").classList.toggle("change")
         }
       } 
 
@@ -16,7 +17,7 @@ import { Link } from 'react-router-dom';
       //Add margin and width 
       document.querySelector("#navSection").style.width = "300px";
       document.querySelector("#navSection").style.marginLeft = "0";
-      document.querySelector(".mainSection").style.marginLeft = "300px";
+      document.querySelector(".mainSection").style.marginLeft = "300px"; 
       return true;
     }
 
@@ -30,8 +31,12 @@ import { Link } from 'react-router-dom';
     }
 
   return (
-        <div id="navSection" className="sideNav">
-            <button className="nav-icon" onClick={toggle}>Menu</button> 
+        <div id="navSection"  className="sideNav"> 
+            <div className="navIconContainer" onClick={toggleMenu}>
+              <div className="bar1"></div>
+              <div className="bar2"></div>
+              <div className="bar3"></div>
+            </div>
             <nav>
               <div className="authorImage">
                 <img alt="Luis Manzanero" src="luis.jpg"/>
@@ -40,12 +45,12 @@ import { Link } from 'react-router-dom';
               <p>Environmental Scientist, Innovator, & Software Developer from Belize</p>
               <div className="navBar">
                 <ul>
-                  <li className="navItem" onClick={toggle}><Link to="/">Home</Link></li>
-                  <li className="navItem" onClick={toggle}><Link to="/about">About</Link></li>
-                  <li className="navItem" onClick={toggle}><Link to="/resume">Resume</Link></li>
-                  <li className="navItem" onClick={toggle}><Link to="/projects">Projects</Link></li>
-                  <li className="navItem" onClick={toggle}><Link to="/blog">Blog</Link></li>
-                  <li className="navItem" onClick={toggle}><Link to="/contact">Contact</Link></li>
+                  <li className="navItem" onClick={toggleMenu}><Link to="/">Home</Link></li>
+                  <li className="navItem" onClick={toggleMenu}><Link to="/about">About</Link></li>
+                  <li className="navItem" onClick={toggleMenu}><Link to="/resume">Resume</Link></li>
+                  <li className="navItem" onClick={toggleMenu}><Link to="/projects">Projects</Link></li>
+                  <li className="navItem" onClick={toggleMenu}><Link to="/blog">Blog</Link></li>
+                  <li className="navItem" onClick={toggleMenu}><Link to="/contact">Contact</Link></li>
                 </ul>
               </div>
               <footer>

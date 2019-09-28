@@ -18,7 +18,7 @@ const Blog = () =>{
           </div>
           <div className="blog-post">
             <div className="image">
-              <img alt="Me" src="luis.jpg" />
+              <img alt="Me" src="luis2.jpg" />
             </div>
             <div className="blog-info">
               <div className="category"><a href="#">#personal</a></div>
@@ -42,7 +42,7 @@ const Blog = () =>{
           </div>
           <div className="blog-post">
             <div className="image">
-              <img alt="Me" src="luis.jpg" />
+              <img alt="Me" src="luis2.jpg" />
             </div>
             <div className="blog-info">
               <div className="category"><a href="#">#personal</a></div>
