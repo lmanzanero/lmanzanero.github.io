@@ -91,6 +91,7 @@ body::-webkit-scrollbar-thumb {
   display: none;
   font-family: cursive;
   margin-left: 1rem;
+  color: palegreen;
 }
 
 .nav-link svg {
@@ -100,11 +101,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fa-primary {
-  color: #ff7eee;
+  color:var(--success-color);
 }
 
 .fa-secondary {
-  color: #df49a6;
+  color:  palegreen;
 }
 
 .fa-primary,
@@ -212,6 +213,14 @@ a {
   margin: auto;
 }
 
+.page h1 {
+  color: var(--text-primary);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--text-primary);
+  padding: 5px;
+}
+
 /* About Page */ 
 .about-header h1 {
   font-weight: bolder;
@@ -275,7 +284,7 @@ a {
 
 .resume-header {
   position: relative;
-  border-bottom: #273747 solid 4px;
+  border-bottom: var(--text-primary) solid 4px;
   margin-bottom: 60px;
 }
 
@@ -334,19 +343,22 @@ a {
 }
 
 .projects-options ul { 
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none; 
 }
 
-.projects-options ul li {
-  display: inline;
-  margin: 4%;
-  font-size: 20px;
+.projects-options ul li {  
+  margin: auto;
+  font-size: 20px; 
+  padding: 5px;
   color: var(--text-secondary);
 }
 
 .projects-options ul li a {
+  padding: 1em;
   color: var(--text-secondary);
 }
 
@@ -354,7 +366,7 @@ a {
   color: palegreen;
 }
 
-.projects-options ul li .active {
+.projects-options ul li .active { 
   color: palegreen;
 }
 
@@ -428,16 +440,20 @@ a {
 .project-inner .links button {
   width: 90px;
   padding: 2px;
-  background-color: rgba(0,0,0,0.1); 
-  color: var(--text-primary);
+  background-color: rgba(58, 143, 94, 0.1); 
+  color: palegreen;
   border: none;
   border-radius: 5px; 
   transition: all 1s;
 }
 
 .project-inner .links button:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(58, 143, 94, 0.8);
   transition: all 1s;
+}
+
+.project-inner .links button:focus-visible {
+  border: none;
 }
 
 /* Blog Page */ 
