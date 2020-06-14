@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const admin = require('./api/routes/admin');
 const dashboard = require('./api/routes/dashboard');
 const posts = require('./api/routes/posts');
+const projects = require('./api/routes/projects');
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -23,6 +24,7 @@ mongoose.connect(db, { useNewUrlParser: true})
 app.use('/api/admin', admin);
 app.use('/api/dashboard', dashboard);
 app.use('/api/posts', posts);
+app.use('/api/projects', projects);
   
 app.get('/', (req, res) => {
     res.send("Hello World");
