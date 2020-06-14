@@ -4,7 +4,7 @@ import Layout from '../layouts/layout';
 const Projects = () =>{
   return (
     <Layout>
-        <div className="projects page">
+        <div className="page">
           <h1>My Recent Work</h1>
           <div className="projects-options">
                 <ul>
