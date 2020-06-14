@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
 				</li>
 	
 				<li className="nav-item">
-					<a href="/tic-tac-toe" className="nav-link">
+					<a href="/about/" className="nav-link">
 						<svg
 							aria-hidden="true"
 							focusable="false"
@@ -65,7 +65,7 @@ const Header = ({ siteTitle }) => (
 				</li>
 	
 				<li className="nav-item">
-					<a href="/quiz.html" className="nav-link">
+					<a href="/resume/" className="nav-link">
 						<svg
 							aria-hidden="true"
 							focusable="false"
@@ -94,7 +94,7 @@ const Header = ({ siteTitle }) => (
 				</li>
 	
 				<li className="nav-item">
-					<a href="#" className="nav-link">
+					<a href="/projects/" className="nav-link">
 						<svg
 							aria-hidden="true"
 							focusable="false"
@@ -123,7 +123,7 @@ const Header = ({ siteTitle }) => (
 				</li>
 	
 				<li className="nav-item">
-					<a href="#" className="nav-link">
+					<a href="/blog/" className="nav-link">
 						<svg
 							aria-hidden="true"
 							focusable="false"
