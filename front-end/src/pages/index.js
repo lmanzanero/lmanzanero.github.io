@@ -1,15 +1,17 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react" 
 import Layout from "../layouts/layout" 
 import SEO from "../components/seo"
 import '../layouts/layout'
+import Slider from "../components/slider"
 
 const IndexPage = () => (
-  <Layout>
-    <div className="page">
-      <SEO title="Home" /> 
-      <Link to="/about/">Go to page 2</Link>
-    </div>
+  <Layout> 
+      <SEO title="Home"/> 
+      <Slider/>
+      <div class="buttons">
+        <button id="prev"><i class="fas fa-arrow-left"></i></button>
+        <button id="next"><i class="fas fa-arrow-right"></i></button>
+     </div>
   </Layout>
 )
 
