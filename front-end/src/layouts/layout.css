@@ -233,15 +233,33 @@ a {
   flex-direction: row;
 }
 
+.flex-container .main-text {
+  font-size: 2em;
+  color: var(--text-primary);
+  width: 50%;
+  margin: auto;
+}
+
+.flex-container .hero-image {
+  width: 300px; 
+  margin: auto;
+}
+
+.flex-container .hero-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .flex-container .services{
   position: relative;
   width:  33%;
   height: 120px;
-  background-color: #273747;
+  background-color: var(--bg-primary);
   color: white;
   margin-top: 30px;
   margin-right: 10px;
-  border-bottom: 3px solid green;
+  border-bottom: 3px solid palegreen;
   text-align: left;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -254,29 +272,36 @@ a {
    position: absolute; 
    bottom: 0;
    padding-left: 10px;
+   margin: 5px;
 }
 
 .about-projects {
-  margin-top: 30px;
-  background-color: #273747;
+  margin-top: 10%;
+  background-color: var(--bg-primary);
   color: white;
-  padding: 10px;
+  padding: 20px; 
   text-align: center;
+  font-size: 1.5em;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
  .about-projects button {
   color: #000;
   text-transform: uppercase;
+  width: 90px;
+  height: 30px;
   letter-spacing: 1px;
   border: 1px solid #000;
   padding: 2px 10px;
+  margin: auto;
+  transition: all 0.5s;
 }
 
 .about-projects button:hover {
-  background-color: #273747;
-  color: white;
+  background-color: palegreen;
+  color: var(--bg-primary);
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.5s;
 }
 
 
@@ -526,7 +551,7 @@ a {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  width: 100vw;
+  width: 100vw; 
 }
 
 .slide {
@@ -546,7 +571,7 @@ a {
 .slide .content {
   position: absolute;
   bottom: 70px;
-  left: -600px;
+  left: -400px;
   opacity: 0;
   width: 600px;
   background-color: rgba(0,0,0,0.5);
@@ -573,7 +598,7 @@ a {
 .buttons button#prev {
   position: absolute;
   top: 40%;
-  left: 15px;
+  left: 100px;
 }
 
 .buttons button {
@@ -600,6 +625,10 @@ a {
 
   .slide.current .content {
     transform: translateY(-300px);
+  }
+
+  .buttons button#prev { 
+    left: 15px;
   }
 }
 

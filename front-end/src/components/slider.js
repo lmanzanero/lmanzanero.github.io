@@ -1,10 +1,10 @@
 import React from "react"
 
-const Slider = ({ siteTitle }) => {
+const Slider = () => {
   return (
-    <div class="slider">
-      <div class="slide current">
-        <div class="content">
+    <div className="slider">
+      <div className="slide current">
+        <div className="content">
           <h1>Slide One</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
@@ -12,8 +12,8 @@ const Slider = ({ siteTitle }) => {
           </p>
         </div>
       </div>
-      <div class="slide">
-        <div class="content">
+      <div className="slide">
+        <div className="content">
           <h1>Slide Two</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
@@ -21,8 +21,8 @@ const Slider = ({ siteTitle }) => {
           </p>
         </div>
       </div>
-      <div class="slide">
-        <div class="content">
+      <div className="slide">
+        <div className="content">
           <h1>Slide Three</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
@@ -30,8 +30,8 @@ const Slider = ({ siteTitle }) => {
           </p>
         </div>
       </div>
-      <div class="slide">
-        <div class="content">
+      <div className="slide">
+        <div className="content">
           <h1>Slide Four</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
@@ -39,8 +39,8 @@ const Slider = ({ siteTitle }) => {
           </p>
         </div>
       </div>
-      <div class="slide">
-        <div class="content">
+      <div className="slide">
+        <div className="content">
           <h1>Slide Five</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
@@ -48,8 +48,8 @@ const Slider = ({ siteTitle }) => {
           </p>
         </div>
       </div>
-      <div class="slide">
-        <div class="content">
+      <div className="slide">
+        <div className="content">
           <h1>Slide Six</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic

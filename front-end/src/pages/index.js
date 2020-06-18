@@ -8,9 +8,9 @@ const IndexPage = () => (
   <Layout> 
       <SEO title="Web Developer | Environmental Scientist | Innovator"/> 
       <Slider/>
-      <div class="buttons">
-        <button id="prev"><i class="fas fa-arrow-left"></i></button>
-        <button id="next"><i class="fas fa-arrow-right"></i></button>
+      <div className="buttons">
+        <button id="prev"><i className="fas fa-arrow-left"></i></button>
+        <button id="next"><i className="fas fa-arrow-right"></i></button>
      </div>
   </Layout>
 )
