@@ -1,17 +1,17 @@
-import React, { useState }from 'react';  
+import React, { useState, useEffect }from 'react';  
 import Layout from '../layouts/layout';
+import { Link } from 'gatsby';
+
 
 const Projects = () =>{
-  const [isActive, setIsActive] = useState(0);
-  // fetch('http://localhost:3000/api/projects/', {
-  //   method: 'GET',
-  //   mode:'no-cors'
-  // })
-  // .then(res => {
-  //   console.log(res.text)
-  // }) 
+  const [projectsData, setProjectData] = useState([]);
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/photos/?albumId=1')
+      .then(response => response.json())
+      .then(json => setProjectData(json));
+      }, []);
 
-  const onClick = (e) => { 
+  const onClickItem = (e) => { 
     const options = document.querySelectorAll('.option'); 
     options.forEach(option => { 
       option.classList.remove('active');
@@ -25,73 +25,30 @@ const Projects = () =>{
           <h1>My Recent Work</h1>
           <div className="projects-options">
                 <ul>
-                  <li onClick={onClick}><a className="option active" href="#">All</a></li>
-                  <li onClick={onClick}><a className="option" href="#">Web Design</a></li>
-                  <li onClick={onClick}><a className="option" href="#">Mobile Development</a></li>
-                  <li onClick={onClick}><a className="option" href="#">Videos</a></li>
-                  <li onClick={onClick}><a className="option" href="#">Music</a></li>   
+                  <li onClick={onClickItem}><a className="option active" href="#all">All</a></li>
+                  <li onClick={onClickItem}><a className="option" href="#web-design">Web Design</a></li>
+                  <li onClick={onClickItem}><a className="option" href="#mobile-development">Mobile Development</a></li>
+                  <li onClick={onClickItem}><a className="option" href="#videos">Videos</a></li>
+                  <li onClick={onClickItem}><a className="option" href="#music">Music</a></li>   
                 </ul>
           </div>
           <div className="project-items">
-            <div className="project-item">
-              <img alt="" src="https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?size=626&ext=jpg"/>
-              <div className="project-inner">
-                <div className="title">Project 1</div>
-                <div className="category">Web Design</div>
-                <div className="links">
-                  <button>Live Link</button>
+            {
+              projectsData.map(project => (
+                <div key={project.id} className="project-item">
+                    <img alt="" src={project.thumbnailUrl}/>
+                    <div className="project-inner">
+                     <div className="title">{project.title}</div>
+                      <div className="category">Web Design</div>
+                      <div className="links">
+                        <a href={project.url} target="_blank"><button>Live Link</button></a>
+                      </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div className="project-item">
-             <img alt="" src="https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?size=626&ext=jpg"/>
-              <div className="project-inner">
-                <div className="title">Project 1</div>
-                <div className="category">Web Design</div>
-                <div className="links">
-                  <button>Live Link</button>
-                </div>
-              </div>
-            </div>
-            <div className="project-item">
-              <img alt="" src="https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?size=626&ext=jpg"/>
-              <div className="project-inner">
-                <div className="title">Project 1</div>
-                <div className="category">Web Design</div>
-                <div className="links">
-                  <button>Live Link</button>
-                </div>
-              </div>
-            </div>
-            <div className="project-item">
-              <div className="project-inner">
-                <div className="title">Project 1</div>
-                <div className="category">Web Design</div>
-                <div className="links">
-                  <button>Live Link</button>
-                </div>
-              </div>
-            </div>
-            <div className="project-item">
-              <div className="project-inner">
-                <div className="title">Project 1</div>
-                <div className="category">Web Design</div>
-                <div className="links">
-                  <button>Live Link</button>
-                </div>
-              </div>
-            </div>
-            <div className="project-item">
-              <div className="project-inner">
-                <div className="title">Project 1</div>
-                <div className="category">Web Design</div>
-                <div className="links">
-                  <button>Live Link</button>
-                </div>
-              </div>
-            </div>
+              ))
+            }
           </div>
-      </div>
+        </div>
     </Layout>
   );
 }
