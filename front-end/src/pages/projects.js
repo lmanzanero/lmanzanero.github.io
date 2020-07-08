@@ -1,6 +1,5 @@
 import React, { useState, useEffect }from 'react';  
-import Layout from '../layouts/layout';
-import { Link } from 'gatsby';
+import Layout from '../layouts/layout'; 
 
 
 const Projects = () =>{

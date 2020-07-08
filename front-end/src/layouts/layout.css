@@ -215,50 +215,54 @@ a {
 
 .page h1 {
   color: var(--text-primary);
-  text-align: center;
-  text-decoration: underline;
+  text-align: center; 
+  border-bottom: 2px solid var(--text-primary);
   text-decoration-color: var(--text-primary);
+  width: auto;
+  font-size: 1.5em;
   padding: 5px;
 }
 
 /* About Page */ 
-.about-header h1 {
+.about-header {
   font-weight: bolder;
-  margin-bottom: 30px;
+  margin: 20px auto;
+  padding-bottom: 3px;
 }
  
 
 .flex-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .flex-container .main-text {
   font-size: 2em;
   color: var(--text-primary);
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 
 .flex-container .hero-image {
   width: 300px; 
-  margin: auto;
+  margin: 20px auto;
 }
 
 .flex-container .hero-image img {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .flex-container .services{
   position: relative;
-  width:  33%;
-  height: 120px;
+  width:  260px;
+  height: 200px;
   background-color: var(--bg-primary);
-  color: white;
-  margin-top: 30px;
-  margin-right: 10px;
+  color: white; 
+  margin: 40px auto;
   border-bottom: 3px solid palegreen;
   text-align: left;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -276,10 +280,10 @@ a {
 }
 
 .about-projects {
-  margin-top: 10%;
+  margin: 40px auto 100px auto;
   background-color: var(--bg-primary);
   color: white;
-  padding: 20px; 
+  padding: 10px; 
   text-align: center;
   font-size: 1.5em;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -293,7 +297,7 @@ a {
   letter-spacing: 1px;
   border: 1px solid #000;
   padding: 2px 10px;
-  margin: auto;
+  margin: 5px auto;
   transition: all 0.5s;
 }
 
@@ -376,10 +380,13 @@ a {
 }
 
 .projects-options ul li {  
-  margin: auto;
-  font-size: 20px; 
-  padding: 5px;
+  margin: 5px auto;
+  font-size: 1em; 
+  padding: 5px; 
   color: var(--text-secondary);
+  background-color: var(--dark-color-b);
+  border-radius: 3px;
+  border: 1px solid palegreen;
 }
 
 .projects-options ul li a {
@@ -392,7 +399,7 @@ a {
 }
 
 .projects-options ul li .active { 
-  color: palegreen;
+  color: palegreen; 
 }
 
 .project-items {
@@ -683,10 +690,34 @@ a {
     justify-content: center;
   }
 
+  #themeButton {
+    display: none;
+  }
+
   .page {
     margin: 0;
     padding: auto; 
     width: 100%;
+  }
+
+  .flex-container.mobile {
+    position: relative;
+    background-color: var(--bg-primary);
+    margin: 170px 10px 10px 10px;
+    border-radius: 5px;
+  }
+
+  .flex-container .hero-image {
+    display: block;
+    margin-top: -150px;
+    margin-bottom: -15px;
+    width: 300px;  
+    justify-content: center;
+  }
+
+  .flex-container .hero-image img {
+    border: 5px solid var(--dark-color-a); 
+    box-shadow: none;
   }
 
   .blog-post {
@@ -708,6 +739,27 @@ a {
   .blog-post .blog-info .exerpt {
     width: 100%; 
     display: none;
+  }
+
+  .flex-container .main-text {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .flex-container .services {
+    width: 100%;
+    margin: 15px 10px;
+  }
+
+ .about-projects { 
+    margin: 40px 5px 100px 5px; 
+  }
+
+
+  .page h1 {
+    width: 80%;  
   }
 
   main {
