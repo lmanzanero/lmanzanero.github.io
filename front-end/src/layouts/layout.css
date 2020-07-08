@@ -313,12 +313,12 @@ a {
 
 .resume-header {
   position: relative;
-  border-bottom: var(--text-primary) solid 4px;
+  /* border-bottom: var(--text-primary) solid 4px; */
   margin-bottom: 60px;
 }
 
 .resume-header h1 {
-  padding: 5px; 
+  padding: 5px;  
 }
 .work-section {
   margin-bottom: 70px; 
@@ -328,7 +328,7 @@ a {
   position: relative;
   max-width: 900px;
   width: 95%;
-  height: 300px;
+  height: auto;
   margin: 0 auto;
   color: var(--text-primary);
   background-color: var(--bg-secondary);
@@ -361,6 +361,11 @@ a {
     padding-left: 22%;
     margin-top: -15px; 
 }
+
+.work-item-inner .work-heading h2 {
+  margin: 5px;
+}
+
 .work-item-inner .work-content {
   padding: 2em;
 }
@@ -733,6 +738,28 @@ a {
     box-shadow: none;
   }
 
+  .work-item {
+    border-radius: 5px;
+  }
+
+  .work-item .work-item-inner {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .work-item .work-item-inner .work-heading{ 
+    width: 100%;
+    margin-top: 50px;   
+    padding-left: 0;
+  }
+
+  .work-item .work-item-inner .work-heading h2 {
+    font-size: 1em;  
+  }
+  .work-item .work-item-inner .work-content { 
+    padding: 0;
+    margin: 10px auto;
+  }
   .blog-post {
     display: flex;
     flex-direction: column;

@@ -60,7 +60,7 @@ const Resume = () =>{
                       <img alt="Belizing.com" src="https://di7b4gw2u10mc.cloudfront.net/295000/294288.906.486da78a22.jpg"/>
                     </div>
                     <div className="work-heading">
-                      <h2>Full Stack Web Developer at Belizing.com</h2>
+                      <h2>Full Stack Web Developer at Belizing.com</h2> 
                       <span>2018-present</span>
                     </div>
                   <div className="work-content">
