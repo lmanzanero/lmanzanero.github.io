@@ -686,8 +686,21 @@ a {
     flex-direction: row;
   }
 
-  .nav-link {
+  .nav-link svg {
+    height: 2em;
+    width: 2em
+  }
+
+  .nav-link { 
+    display: inline;
     justify-content: center;
+    text-align: center;   
+  }
+
+  .navbar .link-text {  
+    display: inline-block; 
+    text-align: center;
+    font-size: 1em; 
   }
 
   #themeButton {
