@@ -11,11 +11,11 @@ const ProjectSchema = new Schema({
     type: Array,
     required: false,
   },
-  image_url: {
+  img_url: {
     type: String,
     require: true,
   },
-  link: {
+  url: {
       type: String,
       require: true
   }
