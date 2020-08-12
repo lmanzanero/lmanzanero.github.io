@@ -14,7 +14,7 @@ const IndexPage = () => (
               <img src=""  alt="Luis Manzanero"/>
             </div>
             <div className="main-text">
-              <h1 className="about-header">Who am I?</h1>
+              <h1 className="about-header">Envrionmental Scientist, Innovator, Software Developer</h1>
               <p><b>"</b>I believe I'm one of the most versatile individuals that exists, and it has been been a personal goal of mine to be so; ultimatley, use every skill possible to save our planet.<b>"</b></p> 
             </div>
         </div>
@@ -37,8 +37,8 @@ const IndexPage = () => (
             </div>
         </div>
         <div className="flex-container about-projects">
-            <p>I am happy to know you that 300+ projects done sucessfully!</p>
-            <button>Hire me</button>
+            <p>I'd love to explore opportunities that can change the world!</p>
+            <button>Contact me</button>
         </div>
     </div>
   </Layout>

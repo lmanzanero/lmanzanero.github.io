@@ -226,7 +226,7 @@ a {
   margin-right: 0.5em;
 }
 
-.page h1 {
+/* .page h1 {
   color: var(--text-primary);
   text-align: center; 
   border-bottom: 2px solid var(--text-primary);
@@ -234,12 +234,14 @@ a {
   width: auto;
   font-size: 1.5em;
   padding: 5px;
-}
+} */
 
 /* About Page */ 
-.about-header {
-  font-weight: bolder;
-  margin: 20px auto;
+  .about-header {
+  color: var(--text-primary);
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 1.5em auto;
   padding-bottom: 3px;
 }
  
@@ -247,11 +249,11 @@ a {
 .flex-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .flex-container .main-text {
-  font-size: 2em;
+  font-size: 1.5em;
   color: var(--text-primary);
   width: 60%;
   margin: auto;
@@ -272,10 +274,10 @@ a {
 .flex-container .services{
   position: relative;
   width:  260px;
-  height: 200px;
+  height: 220px;
   background-color: var(--bg-primary);
   color: white; 
-  margin: 40px auto;
+  margin: 5em auto; 
   border-bottom: 3px solid palegreen;
   text-align: left;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -293,32 +295,44 @@ a {
 }
 
 .about-projects {
-  margin: 40px auto 100px auto;
+  width: 90%;
+  height: 3em;
+  margin: 1em auto;
+  justify-content: center;
   background-color: var(--bg-primary);
-  color: white;
-  padding: 10px; 
+  color: white; 
   text-align: center;
   font-size: 1.5em;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.about-projects p { 
+  text-align: center;
+  margin: auto;
+}
+
  .about-projects button {
   color: #000;
   text-transform: uppercase;
-  width: 90px;
-  height: 30px;
-  letter-spacing: 1px;
+  width: 130px;
+  height: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
   border: 1px solid #000;
-  padding: 2px 10px;
-  margin: 5px auto;
+  padding: 1em auto;
+  margin: auto;
   transition: all 0.5s;
 }
 
 .about-projects button:hover {
   background-color: palegreen;
-  color: var(--bg-primary);
+  color: var(--bg-primary); 
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transition: all 0.5s;
+}
+
+.about-projects button:focus {
+  outline: none;
 }
 
 
