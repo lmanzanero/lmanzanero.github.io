@@ -71,6 +71,18 @@ body::-webkit-scrollbar-thumb {
   margin-top: auto;
 }
 
+.flex-container .hero-image {
+  width: 300px; 
+  margin: 20px auto;
+}
+
+.flex-container .hero-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 .nav-link {
   display: flex;
   align-items: center;
@@ -88,7 +100,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .link-text {
-  display: none;
+  /* display: none; */
   font-family: cursive;
   margin-left: 1rem;
   color: palegreen;
@@ -113,16 +125,20 @@ body::-webkit-scrollbar-thumb {
   transition: var(--transition-speed);
 }
 
-.logo {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+.logo {     
   text-align: center;
   color: var(--text-secondary);
-  background: var(--bg-secondary);
-  font-size: 1.5rem;
-  letter-spacing: 0.3ch;
-  width: 100%;
+  background: var(--bg-secondary); 
+  width: 100%; 
+  margin-bottom: 2em;
+}
+
+.header-logo img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
 }
 
 .logo svg {
@@ -137,11 +153,7 @@ body::-webkit-scrollbar-thumb {
   left: -999px;
   transition: var(--transition-speed);
 }
-
-.navbar:hover .logo svg {
-  transform: rotate(-180deg);
-}
-
+ 
 
 ul {
 	list-style: none;
@@ -209,8 +221,9 @@ a {
 .page {
   position: relative;  
   height: 100%;
-  width: 80%;
-  margin: auto;
+  width: 80vw;
+  margin-left: 260px; 
+  margin-right: 0.5em;
 }
 
 .page h1 {
@@ -811,13 +824,13 @@ a {
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
-    width: 5rem;
+    width: 16rem;
     height: 100vh;
   }
 
-  .navbar:hover {
+  /* .navbar:hover {
     width: 16rem;
-  }
+  } */
 
   .navbar:hover .link-text {
     display: inline;

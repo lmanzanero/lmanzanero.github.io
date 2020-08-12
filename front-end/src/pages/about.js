@@ -13,7 +13,7 @@ const AboutPage = () =>{
         </Helmet>
         <div className="flex-container mobile">
             <div className="hero-image">
-              <img src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/23213118_1669846839752690_438460186848441502_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=UT6Zwtco6B0AX9QsgGf&_nc_ht=scontent.ftpe7-3.fna&oh=388c69b2ddbe19eab4b2ce7c7de11bf1&oe=5F0C46E1"  alt="Luis Manzanero"/>
+              <img src="https://scontent.ftpe8-2.fna.fbcdn.net/v/t31.0-8/23213118_1669846839752690_438460186848441502_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=V_JhWdaB2L4AX-jYgN4&_nc_ht=scontent.ftpe8-2.fna&oh=a258945c231848dcef28711abc518df1&oe=5F5B60E1"  alt="Luis Manzanero"/>
             </div>
             <div className="main-text">
               <h1 className="about-header">Who am I?</h1>
