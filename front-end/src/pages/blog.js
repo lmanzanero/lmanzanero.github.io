@@ -8,7 +8,7 @@ const Blog = () =>{
           <div className="blog-posts">
             <div className="blog-post">
                 <div className="image">
-                  <img alt="Me" src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/23213118_1669846839752690_438460186848441502_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=UT6Zwtco6B0AX9QsgGf&_nc_ht=scontent.ftpe7-3.fna&oh=388c69b2ddbe19eab4b2ce7c7de11bf1&oe=5F0C46E1" />
+                  <img alt="Me" src="https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4" />
                 </div>
                 <div className="blog-info">
                   <div className="category"><a href="#">#personal</a></div>
@@ -20,7 +20,7 @@ const Blog = () =>{
               </div>
               <div className="blog-post">
                 <div className="image">
-                  <img alt="Me" src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/23213118_1669846839752690_438460186848441502_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=UT6Zwtco6B0AX9QsgGf&_nc_ht=scontent.ftpe7-3.fna&oh=388c69b2ddbe19eab4b2ce7c7de11bf1&oe=5F0C46E1" />
+                  <img alt="Me" src="https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4" />
                 </div>
                 <div className="blog-info">
                   <div className="category"><a href="#">#personal</a></div>
@@ -32,7 +32,7 @@ const Blog = () =>{
               </div>
               <div className="blog-post">
                 <div className="image">
-                  <img alt="Me" src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/23213118_1669846839752690_438460186848441502_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=UT6Zwtco6B0AX9QsgGf&_nc_ht=scontent.ftpe7-3.fna&oh=388c69b2ddbe19eab4b2ce7c7de11bf1&oe=5F0C46E1" />
+                  <img alt="Me" src="https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4" />
                 </div>
                 <div className="blog-info">
                   <div className="category"><a href="#">#personal</a></div>
@@ -44,7 +44,7 @@ const Blog = () =>{
               </div>
               <div className="blog-post">
                 <div className="image">
-                  <img alt="Me" src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/23213118_1669846839752690_438460186848441502_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=UT6Zwtco6B0AX9QsgGf&_nc_ht=scontent.ftpe7-3.fna&oh=388c69b2ddbe19eab4b2ce7c7de11bf1&oe=5F0C46E1" />
+                  <img alt="Me" src="https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4" />
                 </div>
                 <div className="blog-info">
                   <div className="category"><a href="#">#personal</a></div>

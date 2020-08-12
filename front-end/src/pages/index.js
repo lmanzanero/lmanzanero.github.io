@@ -11,7 +11,7 @@ const IndexPage = () => (
       <div className="page">
         <div className="flex-container mobile">
             <div className="hero-image">
-              <img src=""  alt="Luis Manzanero"/>
+              <img src="https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4"  alt="Luis Manzanero"/>
             </div>
             <div className="main-text">
               <h1 className="about-header">Envrionmental Scientist, Innovator, Software Developer</h1>
@@ -21,19 +21,19 @@ const IndexPage = () => (
         <div className="flex-container">
             <div className="services">
               <i>Icon</i>
-              <h3>Software Development</h3>
-            </div>
-            <div className="services">
-              <i>Icon</i>
-              <h3>Web Design</h3>
-            </div>
-            <div className="services">
-              <i>Icon</i>
               <h3>Web Design</h3>
             </div>
             <div className="services">
               <i>Icon</i>
               <h3>Mobile Development</h3>
+            </div>
+            <div className="services">
+              <i>Icon</i>
+              <h3>Videos</h3>
+            </div>
+            <div className="services">
+              <i>Icon</i>
+              <h3>Music</h3>
             </div>
         </div>
         <div className="flex-container about-projects">
