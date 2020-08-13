@@ -7,10 +7,6 @@ const ProjectSchema = new Schema({
     type: String,
     required: true
   },
-  category: {
-    type: Array,
-    required: false,
-  },
   img_url: {
     type: String,
     require: true,
@@ -18,6 +14,10 @@ const ProjectSchema = new Schema({
   url: {
       type: String,
       require: true
+  },
+  category: {
+    type: Array,
+    required: false,
   }
 });
 
