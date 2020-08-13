@@ -83,6 +83,27 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+ #socialMediaIcons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #socialMediaIcons .nav-link {
+    width: 80px;  
+  }
+
+  #socialMediaIcons .nav-link:hover {
+    background: none;
+  }
+
+
+ #socialMediaIcons .nav-link svg {
+   width: 100%;
+   border-radius: 3em;
+   background: palegreen;
+ }
+
+
 .nav-link {
   display: flex;
   align-items: center;
@@ -735,7 +756,7 @@ a {
     font-size: 1em; 
   }
 
-  #themeButton {
+  #socialMediaIcons {
     display: none;
   }
 

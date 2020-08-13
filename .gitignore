@@ -3,7 +3,11 @@
 # dependencies
 /node_modules
 
+#environment variables
+/.env
+
 /client/node_modules
+/front-end/.env
 
 /config/keys_dev.js
 # testing
