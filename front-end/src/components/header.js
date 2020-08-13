@@ -7,7 +7,8 @@ const Header = ({ siteTitle }) => (
 			<ul className="navbar-nav">
 				<li className="logo">
 					<a href="/" className="header-logo"> 
-							 <img src="https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4"/> 
+							{/* <Image fluid={}/> */}
+							 <img src="https://lh3.googleusercontent.com/omgfiTKvyOfIYJbGpry5X-Pr7r0brKqCULTcSNB9Uyc9p2inRmbxQy3gNAlcv45G9LdGqZ56-lbTUs4T8MqvXIVP2yS9qbE-HepSKAcmvgDMDuTQBciWd5oiSTJr-UV-d9kDgq5UR8y50f4vBRkli6mHN6xBvwuJvVBdirWkJtCKXElYbw3pVCimlH9lqDKQFPzJuXQB7kK4e2Vd_RcOjFaIZeh0uJ_qAe36s_xkCpQGIzG-bOFX50SHQ3GS6n0T9EMMxxj8WbDxnfkBt-su-14o1kc778EsnYE0tn8Dob0UKS34riCPr9fcB_PHCxMv60_uf_wunopZG732vgGCgSS_ik-FpU-RaP6unkPa3jrXyLXfUxUI0D_5HQTKyDO2jRl5kj5wMRQlsEVepPs5u4zrV1U7dTE4jQoQWP5ihNgjBumxGbGYc8LKqCkvHiB_2gq5r-2iS-N36_Ysmj3BdcLBIuAtCXosLCQcy0GIG1ZiigWP3OccFAcULt6p4w1D7UVKIPe_eEHMly54DJ5LqBwPLMoa6r51w3a1Xf2VxssvruOm07mLRR-nEpE_L4zGGV3ZkV0oVfxGEtnHEb04jEuVxyWzf__kRIY6ga6Ga8byby0wvkOlHG1VLDdIM6M5Olq2FQ41lCIntmk8AxiOs3buUzyzzoXbWdoLRNghQOCQQ6h8EMLr_9oBOHeV=w2048-h1638-no?authuser=0"/> 
 					</a>
 				</li>
 				<li className="nav-item">
