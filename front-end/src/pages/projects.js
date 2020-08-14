@@ -1,4 +1,5 @@
 import React, { useState, useEffect }from 'react';  
+import SEO from "../components/seo"
 import Layout from '../layouts/layout'; 
 
 
@@ -20,6 +21,7 @@ const Projects = () =>{
 
   return (
     <Layout>
+        <SEO title="Projects"/> 
         <div className="page">
           <h1>My Recent Work</h1>
           <div className="projects-options">

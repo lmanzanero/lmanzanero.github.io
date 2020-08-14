@@ -1,11 +1,13 @@
 import React from 'react';  
 import { Helmet } from 'react-helmet';
+import SEO from "../components/seo"
 import Layout from '../layouts/layout';
 
 const Resume = () =>{
   return (
      <Layout>
           <div className="page">
+          <SEO title="Resume"/> 
             <Helmet>
               <title>Resume | Luis Manzanero</title>
               <meta name="description" content="I have a bachelors Degree in Enviornmetal Science and 5+ years as a software developer" />

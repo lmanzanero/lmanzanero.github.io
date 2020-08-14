@@ -1,9 +1,11 @@
 import React from 'react';  
+import SEO from "../components/seo"
 import Layout from '../layouts/layout';
 
 const Blog = () =>{
   return (
      <Layout>
+       <SEO title="Blog"/> 
        <div className="page">
           <div className="blog-posts">
             <div className="blog-post">
