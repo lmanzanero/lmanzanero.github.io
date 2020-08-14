@@ -89,6 +89,10 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
   }
 
+  #socialMediaIconsMobile {
+    display: none;
+  }
+
   #socialMediaIcons .nav-link {
     width: 80px;  
   }
@@ -837,7 +841,7 @@ a {
     width: 100%;
     margin: 10px auto;
     text-align: center;
-    justify-content: center;
+    justify-content: center; 
   }
 
   .flex-container .services {
@@ -849,26 +853,53 @@ a {
     height: auto;
     padding: 1em;
     font-size: 1.3em;
-    margin: 40px 10px 100px; 
+     margin: 40px 10px 100px; 
   }
 
   .about-projects p {
-    margin: 0.5em auto;
+    margin: 0.6em;
   }
 
-
-  .page h1 {
-    width: 100%;   
+  .page .about-header { 
+    font-weight: bold;
+    font-size: 0.8em; 
   }
 
-  .about-header { 
-    font-size: 0.6em; 
+  .page .main-text p {
+    font-size: 0.8em;
+    padding: 1em;
   }
    
 
   main {
     margin: 0;
   }
+  
+  #socialMediaIconsMobile {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;  
+    width: 100%; 
+    margin: 1em auto;
+  }
+
+  #socialMediaIconsMobile .nav-link{
+    position: relative; 
+    width: auto;
+    height: auto;
+    margin: auto;    
+    background: none; 
+  }
+
+  #socialMediaIconsMobile .nav-link svg { 
+    width: 40px;
+    height: auto;
+    border-radius: 3em;
+    background: palegreen;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+
 }
 
 /* Large screens */
