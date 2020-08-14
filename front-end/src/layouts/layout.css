@@ -846,13 +846,25 @@ a {
   }
 
  .about-projects { 
-    margin: 40px 5px 100px 5px; 
+    height: auto;
+    padding: 1em;
+    font-size: 1.3em;
+    margin: 40px 10px 100px; 
+  }
+
+  .about-projects p {
+    margin: 0.5em auto;
   }
 
 
   .page h1 {
-    width: 80%;  
+    width: 100%;   
   }
+
+  .about-header { 
+    font-size: 0.6em; 
+  }
+   
 
   main {
     margin: 0;
