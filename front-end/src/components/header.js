@@ -6,9 +6,9 @@ const Header = ({ siteTitle }) => (
  		<nav className="navbar">
 			<ul className="navbar-nav">
 				<li className="logo">
-					<a href="/" className="header-logo">  
-							 <img src={`me-logo.jpg`} alt="Luis Manzanero"/> 
-					</a>
+					<Link to="/" className="header-logo">  
+							 <img src="https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4" alt="Luis Manzanero"/> 
+					</Link>
 				</li>
 				<li className="nav-item">
 					<Link to="/" className="nav-link">
@@ -69,7 +69,7 @@ const Header = ({ siteTitle }) => (
 				</li>
 	
 				<li className="nav-item">
-					<a href="/projects/" className="nav-link">
+					<Link to="/projects" className="nav-link">
 						<svg
 							aria-hidden="true"
 							focusable="false"
@@ -94,11 +94,11 @@ const Header = ({ siteTitle }) => (
 							</g>
 						</svg>
 						<span className="link-text">Projects</span>
-					</a>
+					</Link>
 				</li>
 	
 				<li className="nav-item">
-					<a href="/blog/" className="nav-link">
+					<Link to="/blog" className="nav-link">
 						<svg
 							aria-hidden="true"
 							focusable="false"
@@ -123,7 +123,7 @@ const Header = ({ siteTitle }) => (
 							</g>
 						</svg>
 						<span className="link-text">Blog</span>
-					</a>
+					</Link>
 				</li>
 	
 				<li className="nav-item" id="socialMediaIcons">

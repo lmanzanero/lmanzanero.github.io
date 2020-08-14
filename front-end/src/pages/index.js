@@ -5,7 +5,7 @@ import '../layouts/layout'
 
 const IndexPage = () => (
   <Layout> 
-      <SEO title="Web Developer | Environmental Scientist | Innovator"/> 
+      <SEO title="Environmental Scientist & Fullstack Web Developer"/> 
       {/* <meta name="description" content="I believe I'm one of the most versatile individuals that exists, and it has been been a personal goal of mine to be so; ultimatley, use every skill possible to safe our planet" />
            <meta name="keywords" content="Envrionmental Scientist, Innovator, Software Developer" /> */}
       <div className="page">
