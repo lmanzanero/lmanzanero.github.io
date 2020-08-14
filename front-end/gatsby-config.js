@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/portfolio",
   siteMetadata: {
     title: `Luis Manzanero`,
     description: `Hello, I am Luis Manzanero`,
@@ -18,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Luis Manzanero`,
+        short_name: `lmanzanero.com`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

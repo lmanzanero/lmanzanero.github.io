@@ -442,8 +442,9 @@ a {
   color: var(--text-secondary);
   background-color: var(--dark-color-b);
   border-radius: 3px;
-  border: 1px solid palegreen;
+  border: 1.5px solid palegreen;
 }
+
 
 .projects-options ul li a {
   padding: 1em;
