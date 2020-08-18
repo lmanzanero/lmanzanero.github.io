@@ -298,7 +298,7 @@ a {
 }
 
 .flex-container .services{
-  position: relative;
+  position: relative; 
   width:  260px;
   height: 220px;
   background-color: var(--bg-primary);
@@ -306,12 +306,43 @@ a {
   margin: 5em auto; 
   border-bottom: 3px solid palegreen;
   text-align: left;
+  border-radius: 0.5em;
   box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
 }
 
-.flex-container .services icon {
-  padding-left: 10px;
+.services.music { 
+  position: relative;
+  background: url('https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4');
+  object-fit: cover;  
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s;
+  opacity: 0.8; 
+  background: rgba(0, 0, 0, .6);
+}
+.services:hover::before { 
+  opacity: 0;
+}
+
+.flex-container .services .icon { 
+  width: 5.5em;
+  height: 5.5em;
+  padding-left: 15px;
+}
+
+.icon svg {  
+  position: relative;
+  fill: var(--dark-color-a);  
 }
 
 .flex-container .services h3 {
