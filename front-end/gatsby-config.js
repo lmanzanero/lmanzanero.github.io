@@ -1,7 +1,7 @@
 module.exports = { 
   siteMetadata: {
     title: `Luis Manzanero`,
-    description: `Hello, I am Luis Manzanero`,
+    description: `Hello, I am Luis Manzanero - A full stack web developer, environmental scientist and innovator.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -15,6 +15,20 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-mdx`,
+    {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL:  process.env.REACT_API_URL,
+        contentTypes: [
+          "article",
+          "category",
+          "user"
+        ],
+        singleTypes: [`Homepage`],
+        queryLimit: 1000,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

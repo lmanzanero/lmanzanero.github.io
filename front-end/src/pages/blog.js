@@ -1,11 +1,60 @@
 import React from 'react';  
+import { StaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
-import Layout from '../layouts/layout';
+import Layout from '../layouts/layout'; 
+import Posts from '../components/posts';
 
 const Blog = () =>{
   return (
      <Layout>
-       <SEO title="Blog"/> 
+       <SEO 
+            title="Blog"
+            description="I like to write, play the guitar, and explore ways on how I can help the environment throught code"
+       
+        /> 
+          <StaticQuery
+      query={graphql`
+        query {
+          strapiHomepage {
+            Hero {
+              HeroText
+            }
+          }
+          allStrapiArticle(filter: {status: {eq: "published"}}) {
+            edges {
+              node {
+                strapiId
+                slug
+                title
+                category {
+                  name
+                }
+                image {
+                  childImageSharp {
+                      fixed(width: 800, height: 500) {
+                      	src
+                      }
+                  }
+                }
+                user {
+                  username
+                  image {
+                    childImageSharp {
+                        fixed(width: 30, height: 30) {
+                        	src
+                        }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => ( 
+          <Posts article={data.allStrapiArticle.edges}/>   
+      )}
+    />
        <div className="page">
           <div className="blog-posts">
             <div className="blog-post">

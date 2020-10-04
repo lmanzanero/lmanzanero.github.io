@@ -5,58 +5,12 @@ const Slider = () => {
     <div className="slider">
       <div className="slide current">
         <div className="content">
-          <h1>Slide One</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
+          <h1>Hi <br/> I'm Luis Manzanero</h1>
+          <p className='slider-text'>
+            Scientist . Software Developer . Innovator
           </p>
         </div>
-      </div>
-      <div className="slide">
-        <div className="content">
-          <h1>Slide Two</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
-          </p>
-        </div>
-      </div>
-      <div className="slide">
-        <div className="content">
-          <h1>Slide Three</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
-          </p>
-        </div>
-      </div>
-      <div className="slide">
-        <div className="content">
-          <h1>Slide Four</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
-          </p>
-        </div>
-      </div>
-      <div className="slide">
-        <div className="content">
-          <h1>Slide Five</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
-          </p>
-        </div>
-      </div>
-      <div className="slide">
-        <div className="content">
-          <h1>Slide Six</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
-          </p>
-        </div>
-      </div>
+      </div>     
     </div>
   );
 }

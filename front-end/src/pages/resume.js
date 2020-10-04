@@ -7,12 +7,15 @@ const Resume = () =>{
   return (
      <Layout>
           <div className="page">
-          <SEO title="Resume"/> 
-            <Helmet>
+          <SEO title="Resume"
+                description="I have a bachelors Degree in Enviornmetal Science from Galen Univeristy. Worked for companies such as Belizing.com, Oblip.com..."
+    
+          /> 
+            {/* <Helmet>
               <title>Resume | Luis Manzanero</title>
               <meta name="description" content="I have a bachelors Degree in Enviornmetal Science and 5+ years as a software developer" />
               <meta name="keywords" content="Bachelors Degree, GIS Specialist, Data Scientist, Web Developer, Guitarist, Adenturist, Innovator, Software Developer" />
-            </Helmet>
+            </Helmet> */}
             <div className="resume-header">
               <h1><i> Icon </i>Work Experience</h1>
             </div>

@@ -24,7 +24,10 @@ const Projects = () =>{
 
   return (
     <Layout>
-        <SEO title="Projects"/> 
+        <SEO 
+            title="Projects"
+            description="Here is a collection of many of the projects that I have worked on."
+        /> 
         <div className="page">
           <h1>My Recent Work</h1>
           <div className="projects-options">
