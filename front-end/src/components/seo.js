@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
  
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, isHomePage }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -26,26 +26,18 @@ function SEO({ description, lang, meta, title }) {
         }
       }
     `
-  )
+  ) 
+ 
 
-  function isHomePage() {
-    if(window.location.pathname !== '/'){
-      return false
-    } else {
-      return true
-    }
-  }
-   
-
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description; 
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={isHomePage() ? `${site.siteMetadata.title} | %s` : `%s | ${site.siteMetadata.title}`}
+      title={title} 
+      titleTemplate={!isHomePage ? `%s | ${site.siteMetadata.title}` : `${site.siteMetadata.title} | %s`}
       meta={[
         {
           name: `description`,
