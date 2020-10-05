@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{SGa5:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),u=t.n(a);e.default=function(){return u.a.createElement("div",null,u.a.createElement("h1",null,"Login"))}}}]);
-//# sourceMappingURL=component---src-pages-login-js-f13d6c7e21c751a05e90.js.map
