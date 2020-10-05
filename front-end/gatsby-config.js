@@ -1,7 +1,7 @@
 module.exports = { 
   siteMetadata: {
     title: `Luis Manzanero`,
-    description: `Hello, I am Luis Manzanero - A full stack web developer, environmental scientist and innovator.`,
+    description: `Hello, I am Luis Manzanero - An aspiring enviornmental scientist, full stack web developer, and innovator`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -19,13 +19,11 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL:  process.env.REACT_API_URL,
+        apiURL:  "https://lmanzanero.herokuapp.com" || process.env.REACT_API_URL,
         contentTypes: [
-          "article",
-          "category",
-          "user"
-        ],
-        singleTypes: [`Homepage`],
+          `article`,
+          `category`
+        ], 
         queryLimit: 1000,
       },
     },

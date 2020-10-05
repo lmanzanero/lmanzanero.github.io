@@ -12,51 +12,37 @@ const Blog = () =>{
             description="I like to write, play the guitar, and explore ways on how I can help the environment throught code"
        
         /> 
-          <StaticQuery
-      query={graphql`
-        query {
-          strapiHomepage {
-            Hero {
-              HeroText
-            }
-          }
-          allStrapiArticle(filter: {status: {eq: "published"}}) {
-            edges {
-              node {
-                strapiId
-                slug
-                title
-                category {
-                  name
-                }
-                image {
-                  childImageSharp {
-                      fixed(width: 800, height: 500) {
-                      	src
+           
+        <div className="page">
+            <div className="blog-posts">
+            <StaticQuery
+                 query={graphql`
+                    query { 
+                    allStrapiArticle(filter: {status: {eq: "published"}}) {
+                    edges {
+                    node {
+                      strapiId
+                      slug
+                      title
+                      category {
+                        name
                       }
-                  }
-                }
-                user {
-                  username
-                  image {
-                    childImageSharp {
-                        fixed(width: 30, height: 30) {
-                        	src
+                      image {
+                        childImageSharp {
+                            fixed(width: 800, height: 500) {
+                              src
+                            }
                         }
+                      }
                     }
                   }
                 }
               }
-            }
-          }
-        }
-      `}
-      render={data => ( 
-          <Posts article={data.allStrapiArticle.edges}/>   
-      )}
-    />
-       <div className="page">
-          <div className="blog-posts">
+            `}
+              render={data => ( 
+                  <Posts article={data.allStrapiArticle.edges}/>   
+              )}
+            />
             <div className="blog-post">
                 <div className="image">
                   <img alt="Me" src="https://lh3.googleusercontent.com/xM5fS4E9TwFLYrSr_4RMRYtyFzFGXzxCaNaP3846LbXLMpm6-pzesP8gFamwewkmWAi71uD_ly7zg3SoREFPRdg-JeEJbbZefQrLigHkw5YOTiRIzzWGLIM1qc0EHLjVnbsjRXT9BjA1vteR06uyi1TkPYJnPq8v3nuoJiriQnlIdWauV-vInsBzyhLdm4b1XZqkHwMFcLVUN4kXN_AVUcImRMLH41eyzyrF44AdpKjVitLG-zT9gty174A-ufTjiYKlBYcrAX5O-_KCLywAvzcXl0nAK4PoZhgqqYEQrakOrl5xrCXQRueunCD6U8E9BoP3TEQZeoza9pqH42TlHNE0bJSfCZ4STTmiSBVTRZTqaT9V5-A8jeMyV_ay9sn8DSzqdLMLFK68yqiqhmysHL9E3BAibe_Bv-tLhzsgHgnCUxUI87bkuLj2Q17tU6-IyqWC9H-zocH5ZACDXBjQi384nQNt3radQUOV5haUc7DJ7maGLr6QGbCbsAX6tIanCMBr1z2eeYAMvFq7Yy9t28wAAOnBoVpxT8wk_49c8SOPhhPZf-15iFAedM7kGj3380MstBBxQ9RnoKdjv2X0ZO1TyZ94u3CLlt17I0LkspIvKhRwdpnExJhUC8pIFAr84PriWkmF90256XRQT7pU-sUlimrCZl3K7gcIPSWed4uz6KOxsy9hjvEFH-4q=w1232-h1642-no?authuser=0" />

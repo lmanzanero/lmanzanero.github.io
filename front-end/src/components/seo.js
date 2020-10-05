@@ -9,6 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+ 
+
+ 
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -25,6 +28,15 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
+  function isHomePage() {
+    if(window.location.pathname !== '/'){
+      return false
+    } else {
+      return true
+    }
+  }
+   
+
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -33,7 +45,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={isHomePage() ? `${site.siteMetadata.title} | %s` : `%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,

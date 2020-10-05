@@ -1,6 +1,8 @@
+const path = require(`path`);
+
 // Implement the Gatsby API “onCreatePage”. This is
 // called after every page is created.
-exports.onCreatePage = async ({ page, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
    const result = await graphql(
     `
@@ -32,13 +34,13 @@ exports.onCreatePage = async ({ page, actions }) => {
 
     // Create blog articles pages.
     const posts = result.data.articles.edges 
-    const PostTemplate = require.resolve("./src/templates/post.js")
+    const BlogTemplate = require.resolve("./src/templates/post.js")
 
 
     posts.forEach((post, index) => {
       createPage({
         path: `/blog/${post.node.slug}`,
-        component: PostTemplate,
+        component: BlogTemplate,
         context: {
           slug: post.node.slug,
         },
@@ -69,9 +71,12 @@ exports.onCreatePage = async ({ page, actions }) => {
               child: newNode,
           });
       }
-    };
+    }
+  }
   // page.matchPath is a special key that's used for matching pages
   // only on the client.
+  exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
   if (page.path.match(/^\/app/)) {
     page.matchPath = "/app/*"
 
