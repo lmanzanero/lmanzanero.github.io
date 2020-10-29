@@ -28,7 +28,7 @@ const BlogPost = ({ data }) => {
           data-src={article.image.publicURL}
           data-srcset={article.image.publicURL} 
         >
-          <img src={article.image.publicURL}/>
+          <img style={{width: '100%',height: '70vh', objectFit: 'cover'}} src={article.image.publicURL}/>
           <h1>{article.title}</h1>
         </div>
 
