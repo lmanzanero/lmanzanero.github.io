@@ -760,6 +760,8 @@ a {
 .project-inner .links {  
   position: absolute; 
   top: 270px;
+  background-color:var(--bg-primary);
+  border-radius: 5px;
 }
 
 .project-inner .links button {
