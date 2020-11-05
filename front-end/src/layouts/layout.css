@@ -254,6 +254,7 @@ a {
 .page section {
   height: 100vh;
   width: 100%;
+  text-align: center;
 }
 
 .page section h2 { 
@@ -406,7 +407,7 @@ a {
   margin: auto;
 }
 
- .about-projects button {
+button {
   color: #000;
   text-transform: uppercase;
   width: 130px;
@@ -419,14 +420,14 @@ a {
   transition: all 0.5s;
 }
 
-.about-projects button:hover {
+button:hover {
   background-color: palegreen;
   color: var(--bg-primary); 
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transition: all 0.5s;
 }
 
-.about-projects button:focus {
+button:focus {
   outline: none;
 }
 
@@ -854,6 +855,31 @@ a {
   position: absolute;
   bottom: 5%;
   right: 10%;
+}
+
+.contact-methods {
+  margin: 3px solid blue;
+  height: 200px; 
+}
+
+.contact-method {
+  display: inline-block;
+  margin: 3em;
+  border: 1px solid palegreen;  
+  background-color: palegreen;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+
+.contact-method:hover{
+  background-color: var(--success-color);
+}
+
+.contact-method svg {
+  height: 5em;
+  width: 5em; 
+  margin: 1.5em auto;
 }
 
 /* Slider */
