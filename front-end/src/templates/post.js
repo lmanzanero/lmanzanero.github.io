@@ -16,7 +16,7 @@ const BlogPost = ({ data }) => {
   const article = data.strapiArticle
   return (
     <Layout>
-       <Seo
+       {/* <Seo
           title={article.Seo.metaTitle}
           description={article.Seo.metaDescription}
           image={article.Seo.shareImage.image.publicURL}
@@ -35,7 +35,7 @@ const BlogPost = ({ data }) => {
         <div className="uk-section">
           <div className="uk-container uk-container-small">
             <MDXProvider>
-              {/* <MDXRenderer>{article.childStrapiArticleContent.childMdx.body}</MDXRenderer> */}
+              <MDXRenderer>{article.childStrapiArticleContent.childMdx.body}</MDXRenderer>
             </MDXProvider>
 
             <hr className="uk-divider-small" />
@@ -43,16 +43,16 @@ const BlogPost = ({ data }) => {
 
             <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
                 <div >
-                  {/* {article.user.image && <Img fixed={article.user.image.childImageSharp.fixed} imgStyle={{ position: 'static',  borderRadius: '50%' }} />} */}
+                  {article.user.image && <Img fixed={article.user.image.childImageSharp.fixed} imgStyle={{ position: 'static',  borderRadius: '50%' }} />}
                 </div>
                 <div className="uk-width-expand">
-                    {/* <p className="uk-margin-remove-bottom">By { article.user.username }</p> */}
+                    <p className="uk-margin-remove-bottom">By { article.user.username }</p>
                     <p className="uk-text-meta uk-margin-remove-top"><Moment format="MMM Do YYYY">{article.published_at}</Moment></p>
                 </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   )
 }

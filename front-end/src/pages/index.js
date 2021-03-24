@@ -17,6 +17,7 @@ const IndexPage = () => (
         {/* About Section */}
          <section> 
           <h2>About</h2>
+          <h4 className="sub-title">A little about me! </h4>
           <div className="about-section-inner">
             <div className="about-content">
               <p>Hello, I'm Luis Manzanero orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
@@ -25,57 +26,58 @@ const IndexPage = () => (
               </p>
             </div>
             <div className="about-image">
-              <img src="https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4" />
+              <img src="https://lh3.google.com/pw/ACtC-3d706a-8r7R9SsZsEc0lwcS1a8bHMapsg9DMkm697fEw4Jzf_1Eg0-lF29sLQev58fjuqlQthe9rYk1wMKDfGpDG0QBa0U=w1232-h1642-no?authuser=0" />
             </div>
           </div> 
-          <button>Read More</button>
+         <Link to="/about"><button>Read More</button></Link>
          </section>
          <section>
           <h2>Resume</h2> 
-          <ul class="timeline"> 
+          <h4 className="sub-title">A short timeline of where I have worked.</h4>
+          <ul className="timeline"> 
             <li>
-              <div class="direction-r">
-                <div class="flag-wrapper">
-                  <span class="flag">Freelancer</span>
-                  <span class="time-wrapper"><span class="time">2013 - present</span></span>
+              <div className="direction-r">
+                <div className="flag-wrapper">
+                  <span className="flag">EcoCrypt.org</span>
+                  <span className="time-wrapper"><span className="time">2018 - present</span></span>
                 </div>
-                <div class="desc">My current employment. Way better than the position before!</div>
+                <div className="desc">My current employment. A full Stack Developer!</div>
               </div>
             </li>
             <li>
-              <div class="direction-l">
-                <div class="flag-wrapper">
-                  <span class="flag">Apple Inc.</span>
-                  <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+              <div className="direction-l">
+                <div className="flag-wrapper">
+                  <span className="flag">Belizing.com</span>
+                  <span className="time-wrapper"><span className="time">2018 - 2020</span></span>
                 </div>
-                <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+                <div className="desc">Content Creator & Android Developer</div>
               </div>
             </li>
             <li>
-              <div class="direction-r">
-                <div class="flag-wrapper">
-                  <span class="flag">Harvard University</span>
-                  <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+              <div className="direction-r">
+                <div className="flag-wrapper">
+                  <span className="flag">Galen University</span>
+                  <span className="time-wrapper"><span className="time">2016 - 2018</span></span>
                 </div>
-                <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                <div className="desc">Web Developer and content creator!</div>
               </div>
             </li>
             <li>
-              <div class="direction-l">
-                <div class="flag-wrapper">
-                  <span class="flag">Harvard University</span>
-                  <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+              <div className="direction-l">
+                <div className="flag-wrapper">
+                  <span className="flag">DegaSolutions Inc.</span>
+                  <span className="time-wrapper"><span className="time">2015 - 2016</span></span>
                 </div>
-                <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                <div className="desc">Front-end Web & Wordpress Developer</div>
               </div>
             </li>
           </ul> 
           <br/>
-          <button>More</button>
+          <Link to="/resume"><button>More</button></Link>
          </section>
          <section>
            <h2>Projects</h2>
-           <h4 className="sub-title">Things that I'm good at</h4>
+           <h4 className="sub-title">Some cool things I have built!</h4>
            <div className="project-items"> 
                 <div className="project-item">
                     <img alt="test" src="https://www.reggieescobar.com/assets/images/public_projects/oblip_website.jpg"/>
@@ -139,10 +141,11 @@ const IndexPage = () => (
                 </div>  
           </div>
           <br/>
-          <button>More</button>
+          <Link to="/projects"><button>More</button></Link>
          </section>
          <section>
            <h2>Blog</h2>
+           <h4 className="sub-title">I also enjoy writing!</h4>
            <div className="blog-posts">
               <div className="blog-post">
                 <div className="image">
@@ -150,7 +153,7 @@ const IndexPage = () => (
                 </div>
                 <div className="blog-info">
                   <div className="category"><a href="#">#personal</a></div>
-                  <div className="title"><h3>How I overcame Depression in this day and age of depravity</h3></div>
+                  <div className="title"><h3>What it's like living in Taiwan for one year?</h3></div>
                   <div className="exerpt">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
                   <div className="author">Luis Manzanero</div>
                   <div className="published-date">September, 23rd, 2019</div>
@@ -162,7 +165,7 @@ const IndexPage = () => (
                 </div>
                 <div className="blog-info">
                   <div className="category"><a href="#">#personal</a></div>
-                  <div className="title"><h3>How I overcame Depression in this day and age of depravity</h3></div>
+                  <div className="title"><h3>A day in Taiwan!</h3></div>
                   <div className="exerpt">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
                   <div className="author">Luis Manzanero</div>
                   <div className="published-date">September, 23rd, 2019</div>
@@ -174,13 +177,13 @@ const IndexPage = () => (
                 </div>
                 <div className="blog-info">
                   <div className="category"><a href="#">#personal</a></div>
-                  <div className="title"><h3>How I overcame Depression in this day and age of depravity</h3></div>
+                  <div className="title"><h3>How I learned to play the guitar?</h3></div>
                   <div className="exerpt">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
                   <div className="author">Luis Manzanero</div>
                   <div className="published-date">September, 23rd, 2019</div>
                 </div>
               </div>
-              <button>More</button>
+             <Link to="/blog"><button>More</button></Link>
            </div>
          </section>
          <section> 
@@ -199,7 +202,7 @@ const IndexPage = () => (
            <div className="flex-container about-projects">
               <p>I'd love to explore opportunities that can change the world!</p>
               <button>Contact me</button>
-            </div>
+          </div>
          </section>
       </div> 
   </Layout>
