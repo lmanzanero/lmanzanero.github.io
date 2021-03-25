@@ -30,11 +30,12 @@ const Projects = () =>{
         /> 
         <div className="page">
           <h1 className="title">Cool things I've built!</h1>
+          <p className="sub-title">I enjoy being artistic with web design, mobile development, music, and videography!</p>
           <div className="projects-options">
                 <ul>
                   <li><a className="option active" href="#all" rel="noreferrer">All</a></li>
-                  <li><a className="option" href="#web-design" rel="noreferrer">Web Design</a></li>
-                  <li><a className="option" href="#mobile-development" rel="noreferrer">Mobile Development</a></li>
+                  <li><a className="option" href="#web-design" rel="noreferrer">Web Dev</a></li>
+                  <li><a className="option" href="#mobile-development" rel="noreferrer">Mobile Dev</a></li>
                   <li><a className="option" href="#videos" rel="noreferrer">Videos</a></li>
                   <li><a className="option" href="#music" rel="noreferrer">Music</a></li>   
                 </ul>
@@ -45,7 +46,7 @@ const Projects = () =>{
                 <div key={project.id} className="project-item">
                     <img alt="" src={project.thumbnailUrl}/>
                     <div className="project-inner">
-                     <div className="title">{project.title}</div>
+                     <div className="project-title">{project.title}</div>
                       <div className="category">Web Design</div>
                       <div className="links">
                         <a href={project.url} target="_blank" rel="noreferrer"><button>Live Link</button></a>

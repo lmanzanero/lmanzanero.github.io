@@ -6,17 +6,16 @@ import Moment from "react-moment"
 
 import Layout from "../layouts/layout"
 import Seo from "../components/seo"
-
+//replace with react-markdown
 import {MDXProvider} from '@mdx-js/react'
 
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
 
-const BlogPost = ({ data }) => { 
-  console.log(data);
+const BlogPost = ({ data }) => {  
   const article = data.strapiArticle
   return (
     <Layout>
-       {/* <Seo
+       <Seo
           title={article.Seo.metaTitle}
           description={article.Seo.metaDescription}
           image={article.Seo.shareImage.image.publicURL}
@@ -35,7 +34,7 @@ const BlogPost = ({ data }) => {
         <div className="uk-section">
           <div className="uk-container uk-container-small">
             <MDXProvider>
-              <MDXRenderer>{article.childStrapiArticleContent.childMdx.body}</MDXRenderer>
+              {/* <MDXRenderer>{article.childStrapiArticleContent.childMdx.body}</MDXRenderer> */}
             </MDXProvider>
 
             <hr className="uk-divider-small" />
@@ -52,7 +51,7 @@ const BlogPost = ({ data }) => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </Layout>
   )
 }
@@ -80,7 +79,17 @@ export const query = graphql`
               src
             }
         }
-      }  
+      } 
+      user {
+        username
+        image {
+          childImageSharp {
+            fixed(width: 30, height: 30) {
+              src
+            }
+          }
+        } 
+      }
     }
   }
 `

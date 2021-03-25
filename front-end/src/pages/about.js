@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 const About = () => (
   <Layout> 
       <SEO title="About"
-          description="I believe I'm one of the most versatile individuals that exists, and it has been been a personal goal of mine to be so; ultimatley, use every skill possible to safe our planet"
+          description=" Hello! I am Luis Manzanero - An Aspiring environmental scientist with a passion for programming."
       /> 
       {/* <meta name="description" content="I believe I'm one of the most versatile individuals that exists, and it has been been a personal goal of mine to be so; ultimatley, use every skill possible to safe our planet" />
            <meta name="keywords" content="Envrionmental Scientist, Innovator, Software Developer" /> */}
@@ -14,9 +14,10 @@ const About = () => (
           <h4 className="sub-title">A little about me! </h4>
           <div className="about-section-inner">
             <div className="about-content">
-              <p>Hello, I'm Luis Manzanero orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-              orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-              orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+              <p> 
+                Hello! I am Luis Manzanero - An Aspiring environmental scientist with a passion for programming. I am from the world most beautiful country, Belize!
+                Growing up in the jungles of Belize, it is no surprise that the environment plays a major role in my life. I am always trying to learn new things and apply 
+                what I learn with the things that make me happy.
               </p>
             </div>
             <div className="about-image">
