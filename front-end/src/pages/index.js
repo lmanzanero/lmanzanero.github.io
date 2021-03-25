@@ -16,50 +16,6 @@ const IndexPage = () => (
          <Slider/>
         {/* About Section */}
          <section>
-          <h2>Resume</h2> 
-          <h4 className="sub-title">A short timeline of where I have worked.</h4>
-          <ul className="timeline"> 
-            <li>
-              <div className="direction-r">
-                <div className="flag-wrapper">
-                  <span className="flag">EcoCrypt.org</span>
-                  <span className="time-wrapper"><span className="time">2018 - present</span></span>
-                </div>
-                <div className="desc">My current employment. A full Stack Developer!</div>
-              </div>
-            </li>
-            <li>
-              <div className="direction-l">
-                <div className="flag-wrapper">
-                  <span className="flag">Belizing.com</span>
-                  <span className="time-wrapper"><span className="time">2018 - 2020</span></span>
-                </div>
-                <div className="desc">Content Creator & Android Developer</div>
-              </div>
-            </li>
-            <li>
-              <div className="direction-r">
-                <div className="flag-wrapper">
-                  <span className="flag">Galen University</span>
-                  <span className="time-wrapper"><span className="time">2016 - 2018</span></span>
-                </div>
-                <div className="desc">Web Developer and content creator!</div>
-              </div>
-            </li>
-            <li>
-              <div className="direction-l">
-                <div className="flag-wrapper">
-                  <span className="flag">DegaSolutions Inc.</span>
-                  <span className="time-wrapper"><span className="time">2015 - 2016</span></span>
-                </div>
-                <div className="desc">Front-end Web & Wordpress Developer</div>
-              </div>
-            </li>
-          </ul> 
-          <br/>
-          <Link to="/resume"><button>More</button></Link>
-         </section>
-         <section>
            <h2>Projects</h2>
            <h4 className="sub-title">Some cool things I have built!</h4>
            <div className="project-items"> 
