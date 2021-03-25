@@ -597,7 +597,11 @@ button:focus {
 
 /* Projects Page */ 
 .projects-options { 
-  padding: 2em; 
+  position: sticky;
+  background-color: var(--dark-color-a);
+  top: 0;
+  padding: 1em; 
+  z-index: 1;
   text-align: center;
 }
 
