@@ -39,7 +39,7 @@ const Header = ({ siteTitle }) => (
 					</Link>
 				</li>
 				<li className="nav-item">
-					<Link to="/#" className="nav-link">
+					<Link to="/about" className="nav-link">
 						<svg
 							aria-hidden="true"
 							focusable="false"
@@ -68,7 +68,7 @@ const Header = ({ siteTitle }) => (
 				</li>
 	
 				<li className="nav-item">
-					<Link to="/#" className="nav-link">
+					<Link to="/resume" className="nav-link">
 						<svg
 							aria-hidden="true"
 							focusable="false"
@@ -97,7 +97,7 @@ const Header = ({ siteTitle }) => (
 				</li>
 	
 				<li className="nav-item">
-					<Link to="/#" className="nav-link">
+					<Link to="/projects" className="nav-link">
 						<svg
 							aria-hidden="true"
 							focusable="false"

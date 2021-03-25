@@ -738,6 +738,7 @@ button:focus {
   border-radius: 0.3em;
   border-bottom: 3px solid var(--bg-primary);
   cursor: pointer;
+  overflow: hidden;
   transition: all 0.5s;
 }
 
@@ -765,6 +766,11 @@ button:focus {
   transform: scale(1.05);
   object-fit: cover;
   transition: transform 0.3s ease-in-out; 
+}
+
+.blog-post .blog-title {    
+  font-size: 1em;
+  text-align: left;
 }
 
 .blog-post .blog-info {   

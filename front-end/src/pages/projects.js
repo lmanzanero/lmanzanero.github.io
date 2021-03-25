@@ -29,7 +29,7 @@ const Projects = () =>{
             description="Here is a collection of many of the projects that I have worked on."
         /> 
         <div className="page">
-          <h1>My Recent Work</h1>
+          <h1 className="title">Cool things I've built!</h1>
           <div className="projects-options">
                 <ul>
                   <li><a className="option active" href="#all" rel="noreferrer">All</a></li>
