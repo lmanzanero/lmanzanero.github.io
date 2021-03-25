@@ -257,11 +257,12 @@ a {
   text-align: center;
 }
 
-.page section h2 { 
+.page .title { 
   color: var(--text-primary); 
   width: fit-content;
   background-color:rgba(0, 0, 0, 0.5);
   margin: 1em auto;
+  font-size: 1.5em;
   padding: 0.4em;
 }
 
@@ -270,19 +271,10 @@ a {
   font-style: italic;
   font-family: monospace;
   padding: 0.8em 0px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.page h1 {
-  color: var(--text-primary);
-  text-align: center; 
-  border-bottom: 2px solid var(--text-primary);
-  text-decoration-color: var(--text-primary);
-  background-color: var(--bg-primary);
-  width: fit-content;
-  margin: auto;
-  font-size: 1.5em;
-  padding: 5px;
-}
 
 /* About Page */ 
 .main-text .about-header {
@@ -350,79 +342,14 @@ a {
   border-radius: 50%;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-
-.flex-container .services{
-  position: relative; 
-  width:  260px;
-  height: 220px;
-  background-color: var(--bg-primary);
-  color: white; 
-  margin: 5em auto; 
-  border-bottom: 3px solid palegreen;
-  text-align: left;
-  border-radius: 0.5em;
-  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
-}
-
-.services.music { 
-  position: relative;
-  background: url('https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4');
-  object-fit: cover;  
-  background-size: 100% 100%;
-  overflow: hidden;
-}
-
-.services::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transition: all 0.8s;
-  opacity: 0.8; 
-  background: rgba(0, 0, 0, .6);
-}
-.services:hover::before { 
-  opacity: 0;
-}
-
-.flex-container .services .icon { 
-  width: 4em;
-  height: 3.5em;
-  padding-left: 15px;
-}
-
+ 
+ 
 .icon svg {  
   position: relative;
   fill: var(--dark-color-a);  
 }
-
-.flex-container .services h3 {
-   position: absolute; 
-   bottom: 0;
-   padding-left: 10px;
-   margin: 5px;
-}
-
-.about-projects {
-  width: 90%;
-  height: 3em;
-  margin: auto;
-  justify-content: center;
-  background-color: var(--bg-primary);
-  color: white; 
-  text-align: center;
-  font-size: 1.5em;
-  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
-}
-
-.about-projects p { 
-  text-align: center;
-  margin: auto;
-}
+ 
+ 
 
 button {
   color: #000;
