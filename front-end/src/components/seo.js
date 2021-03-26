@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
  
 
-function SEO({ description, lang, meta, title, isHomePage }) {
+function SEO({ description, lang, meta, title, isHomePage, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -50,6 +50,10 @@ function SEO({ description, lang, meta, title, isHomePage }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property:  `og:image`,
+          content:  image
         },
         {
           property: `og:type`,
