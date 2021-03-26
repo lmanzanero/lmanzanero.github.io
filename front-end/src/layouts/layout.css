@@ -246,10 +246,24 @@ a {
 
 .page {
   position: relative;  
-  height: 100%; 
-  text-align: center;
+  height: 100%;   
   margin-left: 260px; 
   margin-right: 0;
+}
+
+.page .markdown-container {
+  font-size: 1.2em;
+  font-family: monospace;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: 1em 3em;
+}
+
+.page iframe {
+  display: flex;
+  text-align: center;
+  margin: 1em auto;
 }
 
 .page section { 
@@ -1038,8 +1052,8 @@ button:focus {
     height: auto;
   }
 
-  .blog-post:last-child {
-    margin-bottom: 6em;
+  .blog-posts .blog-post:last-child {
+    margin-bottom: 2em;
   }
 
   .blog-post .image {

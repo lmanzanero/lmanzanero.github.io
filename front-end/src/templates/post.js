@@ -24,27 +24,22 @@ const BlogPost = ({ data }) => {
           data-src={article.image.publicURL}
           data-srcset={article.image.publicURL} 
         >
-          <img style={{width: '100%',height: '70vh', objectFit: 'cover'}} src={article.image.publicURL}/>
-          <h1>{article.title}</h1>
+          <img style={{width: '100%', height: '70vh', objectFit: 'cover'}} src={article.image.publicURL}/>
+          <h1 className="title">{article.title}</h1>
         </div>
 
-        <div className="uk-section">
-          <div className="uk-container uk-container-small">
-          <Markdown source={article.content} escapeHtml={false} />
-            {/* <MDXProvider>
-              {/* <MDXRenderer>{article.childStrapiArticleContent.childMdx.body}</MDXRenderer> */}
-            {/* </MDXProvider> */} 
-
+        <div className="markdown">
+          <div className="markdown-container">
+          <Markdown source={article.content} escapeHtml={false} />  
             <hr className="uk-divider-small" />
-
-
+            <br/>
             <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
-                <div >
-                  {article.user.image && <Img fixed={article.user.image.childImageSharp.fixed} imgStyle={{ position: 'static',  borderRadius: '50%' }} />}
-                </div>
-                <div className="uk-width-expand">
-                    <p className="uk-margin-remove-bottom">By { article.user.username }</p>
-                    <p className="uk-text-meta uk-margin-remove-top"><Moment format="MMM Do YYYY">{article.published_at}</Moment></p>
+                <div className="author-info">
+                    <div>
+                      {article.user.image && <Img fixed={article.user.image.childImageSharp.fixed} imgStyle={{ position: 'static',  borderRadius: '50%' }} />}
+                      <p className="username">By { article.user.username }</p>
+                    </div>
+                    <p className="date">Published: <Moment format="MMM Do YYYY">{article.published_at}</Moment></p>
                 </div>
             </div>
           </div>
