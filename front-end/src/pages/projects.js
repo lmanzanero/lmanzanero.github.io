@@ -26,10 +26,10 @@ const Projects = () =>{
     <Layout>
         <SEO 
             title="Projects"
-            description="Here is a collection of many of the projects that I have worked on."
+            description="Here is a collection of many projects that I have worked on, contributed, or built for fun!"
         /> 
         <div className="page">
-          <h1 className="title">Cool things I've built!</h1>
+          <h1 className="title">Cool Projects I have built!</h1>
           <p className="sub-title">I enjoy being artistic with web design, mobile development, music, and videography!</p>
           <div className="projects-options">
                 <ul>

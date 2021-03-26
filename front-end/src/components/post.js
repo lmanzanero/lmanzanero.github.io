@@ -8,7 +8,7 @@ const Post = ({ article }) => {
     <Link to={`/blog/${article.node.slug}`}>
       <div className="blog-post">
           <div className="image">
-              <Img fluid={article.node.image.childImageSharp.fixed} imgStyle={{ position: 'static' }} />
+              <Img fluid={article.node.image.childImageSharp.fluid} imgStyle={{ position: 'static', innerHeight: '100%', outerWidth: '100%' }} />
            </div>
           <div className="blog-info">
             <div className="category"><a href="#">{article.node.category.name}</a></div>

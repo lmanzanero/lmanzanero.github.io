@@ -6,9 +6,7 @@ const About = () => (
   <Layout> 
       <SEO title="About"
           description=" Hello! I am Luis Manzanero - An Aspiring environmental scientist with a passion for programming."
-      /> 
-      {/* <meta name="description" content="I believe I'm one of the most versatile individuals that exists, and it has been been a personal goal of mine to be so; ultimatley, use every skill possible to safe our planet" />
-           <meta name="keywords" content="Envrionmental Scientist, Innovator, Software Developer" /> */}
+      />  
         <div className="page"> 
           <h1 className="title">About</h1>
           <h4 className="sub-title">A little about me! </h4>
