@@ -6,10 +6,7 @@ import Moment from "react-moment"
 
 import Layout from "../layouts/layout"
 import Seo from "../components/seo"
-//replace with react-markdown
-import {MDXProvider} from '@mdx-js/react'
-
-import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
+import Markdown from 'react-markdown';
 
 const BlogPost = ({ data }) => {  
   const article = data.strapiArticle
@@ -33,9 +30,10 @@ const BlogPost = ({ data }) => {
 
         <div className="uk-section">
           <div className="uk-container uk-container-small">
-            <MDXProvider>
+          <Markdown source={article.content} escapeHtml={false} />
+            {/* <MDXProvider>
               {/* <MDXRenderer>{article.childStrapiArticleContent.childMdx.body}</MDXRenderer> */}
-            </MDXProvider>
+            {/* </MDXProvider> */} 
 
             <hr className="uk-divider-small" />
 
