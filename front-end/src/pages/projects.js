@@ -4,16 +4,9 @@ import Layout from '../layouts/layout';
 import useGetProjects from '../services/hooks/useProjectsHook';
 
 
-const Projects = () =>{
-  const [projectsData, setProjectData] = useState([]);
+const Projects = () =>{ 
   const { data, status, isloading, error } = useGetProjects('https://lmanzanero.herokuapp.com/projects');
-  console.log(data, status, isloading, error);
-  useEffect(() => { 
-    fetch('https://jsonplaceholder.typicode.com/photos/?albumId=1')
-      .then(response => response.json())
-      .then(json => setProjectData(json));
-      }, []);
-
+  console.log(data, status, isloading, error); 
   // const onClickItem = (e) => { 
   //   const options = document.querySelectorAll('.option'); 
   //   options.forEach(option => { 
@@ -33,23 +26,23 @@ const Projects = () =>{
           <p className="sub-title">I enjoy being artistic with web design, mobile development, music, and videography!</p>
           <div className="projects-options">
                 <ul>
-                  <li><a className="option active" href="#all" rel="noreferrer">All</a></li>
-                  <li><a className="option" href="#web-design" rel="noreferrer">Web Dev</a></li>
-                  <li><a className="option" href="#mobile-development" rel="noreferrer">Mobile Dev</a></li>
-                  <li><a className="option" href="#videos" rel="noreferrer">Videos</a></li>
-                  <li><a className="option" href="#music" rel="noreferrer">Music</a></li>   
+                  <li><span className="option active" >All</span></li>
+                  <li><span className="option">Web Dev</span></li>
+                  <li><span className="option">Mobile Dev</span></li>
+                  <li><span className="option">Videos</span></li>
+                  <li><span className="option">Music</span></li>   
                 </ul>
           </div>
           <div className="project-items">
             {
-             isloading ? 'loading...' : projectsData.map(project => (
+             isloading ? 'loading...' : data.map(project => ( 
                 <div key={project.id} className="project-item">
-                    <img alt="" src={project.thumbnailUrl}/>
+                    <img alt="" src={project.img_url.formats.medium.url}/>
                     <div className="project-inner">
-                     <div className="project-title">{project.title}</div>
-                      <div className="category">Web Design</div>
+                     <div className="project-title">{project.project_name}</div>
+                      {/* <div className="category">Web Design</div> */}
                       <div className="links">
-                        <a href={project.url} target="_blank" rel="noreferrer"><button>Live Link</button></a>
+                        <a href={project.link} target="_blank" rel="noreferrer"><button>Live Link</button></a>
                       </div>
                     </div>
                 </div>

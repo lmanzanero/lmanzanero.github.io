@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout> 
       <SEO 
           title="Scientist, Software Developer, Innovator" 
-          description="I believe I'm one of the most versatile individuals that exists, and it has been been a personal goal of mine to be so; ultimatley, use every skill possible to safe our planet"
+          description="Hello! I am Luis Manzanero - An Aspiring environmental scientist with a passion for programming. I am from the world most beautiful country, Belize!"
           isHomePage="true"
       /> 
       <div className="page">

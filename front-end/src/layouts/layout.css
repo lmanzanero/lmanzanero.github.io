@@ -639,12 +639,11 @@ button:focus {
 }
 
 
-.projects-options ul li a {
-  padding: 1em;
+.projects-options ul li span { 
   color: var(--text-secondary);
 }
 
-.projects-options ul li a:hover {
+.projects-options ul li span:hover {
   color: palegreen;
 }
 
@@ -667,7 +666,7 @@ button:focus {
   border-radius: 0.5em;
   /* background: #273747; */ 
   background: var(--bg-primary);
-  margin: 10px 1em; 
+  margin: 15px 1em; 
   overflow: hidden;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
 }
@@ -685,13 +684,9 @@ button:focus {
   opacity: 0.5;
 } 
 
-.project-items:last-child {
-  margin-bottom: 70px;
-}
-
-.project-item:hover {
-  border-top: black solid 1px;
-}
+.project-item:last-child {
+  margin-bottom: 7em;
+} 
 
 .project-inner {    
   position: absolute; 
@@ -702,11 +697,14 @@ button:focus {
 
 .project-inner .project-title {   
   font-family: monospace; 
-  font-size: 1; 
-  color: var(--text-primary);
+  font-size: 1.1em; 
+  font-weight: 600;
+  color: var(--text-secondary);
   background: var(--bg-primary); 
   display: block;
-  padding: .2em .2em;
+  margin-top: -10px;
+  margin-left: -10px;
+  padding: .3em .3em;
 }
 
 .project-inner .category { 
@@ -716,7 +714,7 @@ button:focus {
 
 .project-inner .links {    
   position: absolute; 
-  bottom:  -190px;
+  bottom:  -240px;
   background-color:var(--bg-primary);
   border-radius: 5px;
 }
@@ -725,13 +723,14 @@ button:focus {
   font-size: 0.5em;
   background-color: rgba(58, 143, 94, 0.1); 
   color: palegreen;
-  border: none;
+  border: none; 
   border-radius: 5px; 
   transition: all 1s;
 }
 
 .project-inner .links button:hover {
   background-color: rgba(58, 143, 94, 0.8);
+  cursor: pointer;
   transition: all 1s;
 }
 
