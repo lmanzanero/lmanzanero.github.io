@@ -31,12 +31,9 @@ const Blog = () =>{
                       }
                       image {
                         childImageSharp {
-                            fluid {
-                              src
-                            }
-                            fixed(width: 800, height: 500) {
-                              src
-                            }
+                          fluid {
+                            ...GatsbyImageSharpFluid
+                          }
                         }
                       }
                     }

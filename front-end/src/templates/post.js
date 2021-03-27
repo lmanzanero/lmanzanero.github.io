@@ -10,6 +10,7 @@ import Markdown from 'react-markdown';
 
 const BlogPost = ({ data }) => {  
   const article = data.strapiArticle
+  console.log(article);
   return (
     <Layout>
        <Seo
@@ -24,7 +25,7 @@ const BlogPost = ({ data }) => {
           data-src={article.image.publicURL}
           data-srcset={article.image.publicURL} 
         >
-          <img style={{width: '100%', height: '70vh', objectFit: 'cover'}} src={article.image.publicURL}/>
+          <Img style={{width: '100%', height: '70vh', objectFit: 'cover'}} fluid={article.image.childImageSharp.fluid}/>
           <h1 className="title">{article.title}</h1>
         </div>
 
@@ -68,8 +69,8 @@ export const query = graphql`
       image {
         publicURL
         childImageSharp {
-            fixed {
-              src
+            fluid {
+              ...GatsbyImageSharpFluid
             }
         }
       } 

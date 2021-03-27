@@ -766,24 +766,24 @@ button:focus {
   transition: all 0.5s;
 }
 
-.blog-post .image {
+.blog-post .image  {
   width: 300px;   
   max-width: 300px;
   height: auto; 
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .blog-post .image img {
   width: 100%;
   height: 100%; 
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .blog-post .image img:hover {
   transform: scale(1.05);
   object-fit: cover;
-  transition: transform 0.3s ease-in-out; 
+  transition: all 1s ease-in-out; 
 }
 
 .blog-post .blog-title {    
