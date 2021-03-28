@@ -7,13 +7,13 @@ import useGetProjects from '../services/hooks/useProjectsHook';
 const Projects = () =>{ 
   const { data, status, isloading, error } = useGetProjects('https://lmanzanero.herokuapp.com/projects');
   console.log(data, status, isloading, error); 
-  // const onClickItem = (e) => { 
-  //   const options = document.querySelectorAll('.option'); 
-  //   options.forEach(option => { 
-  //     option.classList.remove('active');
-  //   });
-  //   e.target.classList.add('active');
-  // }
+  const onClickItem = (e) => { 
+    const options = document.querySelectorAll('.option'); 
+    options.forEach(option => { 
+      option.classList.remove('active');
+    });
+    e.target.classList.add('active');
+  }
 
   return (
     <Layout>
@@ -24,13 +24,13 @@ const Projects = () =>{
         <div className="page">
           <h1 className="title">Cool Projects I have built!</h1>
           <p className="sub-title">I enjoy being artistic with web design, mobile development, music, and videography!</p>
-          <div className="projects-options">
+          <div className="page-categories">
                 <ul>
-                  <li><span className="option active" >All</span></li>
-                  <li><span className="option">Web Dev</span></li>
-                  <li><span className="option">Mobile Dev</span></li>
-                  <li><span className="option">Videos</span></li>
-                  <li><span className="option">Music</span></li>   
+                  <li><span className="option active" onClick={onClickItem}>All</span></li>
+                  <li><span className="option" onClick={onClickItem}>Web Dev</span></li>
+                  <li><span className="option" onClick={onClickItem}>Mobile Dev</span></li>
+                  <li><span className="option" onClick={onClickItem}>Videos</span></li>
+                  <li><span className="option" onClick={onClickItem}>Music</span></li>   
                 </ul>
           </div>
           <div className="project-items">

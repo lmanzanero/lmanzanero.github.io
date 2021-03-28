@@ -612,7 +612,7 @@ button:focus {
 }
 
 /* Projects Page */ 
-.projects-options { 
+.page-categories { 
   position: sticky;
   background-color: var(--dark-color-a);
   top: 0;
@@ -621,7 +621,7 @@ button:focus {
   text-align: center;
 }
 
-.projects-options ul { 
+.page-categories ul { 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -629,7 +629,7 @@ button:focus {
   list-style-type: none; 
 }
 
-.projects-options ul li {  
+.page-categories ul li {  
   margin: 5px auto;
   font-size: 1em; 
   padding: 5px; 
@@ -640,16 +640,19 @@ button:focus {
 }
 
 
-.projects-options ul li span { 
+.page-categories ul li span { 
   color: var(--text-secondary);
 }
 
-.projects-options ul li span:hover {
+.page-categories ul li span:hover {
   color: palegreen;
+  transition: all 0.5s;
 }
 
-.projects-options ul li .active { 
-  color: palegreen; 
+.page-categories ul li .active {  
+  color: palegreen;   
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.5s;
 }
 
 .project-items {
@@ -785,6 +788,18 @@ button:focus {
   object-fit: cover;
   transition: all 1s ease-in-out; 
 }
+
+.blog-post .category {
+  color: purple;
+  margin-bottom: 00.4em;
+  transition: all 0.5s ease-in-out; 
+}
+
+.blog-post .category:hover {
+  color: palegreen; 
+  transition: all 0.5s ease-in-out; 
+}
+
 
 .blog-post .blog-title {    
   font-size: 1em;
@@ -1052,8 +1067,8 @@ button:focus {
     height: auto;
   }
 
-  .blog-posts .blog-post:last-child {
-    margin-bottom: 2em;
+  .blog-posts:last-child {
+    margin-bottom: 3em;
   }
 
   .blog-post .image {
