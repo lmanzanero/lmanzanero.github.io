@@ -23,6 +23,13 @@ exports.createPages = async ({ graphql, actions }) => {
             }
           }
         }
+        homepage: allStrapiHomepage{
+          edges {
+            node {
+              strapiId 
+            }
+          }
+        }
       }
     `
   )

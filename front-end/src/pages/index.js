@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../layouts/layout" 
 import SEO from "../components/seo"
 import '../layouts/layout' 
+import { StaticQuery, graphql } from "gatsby"
 import Slider from "../components/slider"
 import { Link } from "gatsby"
 
@@ -13,7 +14,34 @@ const IndexPage = () => (
           isHomePage="true"
       /> 
       <div className="page">
-         <Slider/> 
+      <StaticQuery
+                 query={graphql`
+                 query {
+                   strapiHomepage {
+                     Hero {
+                       HeroText
+                     }
+                     Seo {
+                       metaTitle
+                       metaDescription 
+                       shareImage {
+                         id
+                         image {
+                          childImageSharp {
+                            fluid {
+                              ...GatsbyImageSharpFluid
+                            }
+                           }
+                         } 
+                       }
+                     }
+                   }
+                 }
+               `}
+              render={data => ( 
+                  <Slider data={data.strapiHomepage}/>  
+              )}
+            />
       </div> 
   </Layout>
 )

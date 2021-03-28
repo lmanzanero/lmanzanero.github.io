@@ -22,8 +22,11 @@ module.exports = {
         apiURL:  "https://lmanzanero.herokuapp.com" || process.env.REACT_API_URL,
         contentTypes: [
           `article`,
-          `category`
+          `category`, 
         ], 
+        singleTypes: [
+          `homepage`, 
+        ],
         queryLimit: 1000,
       },
     },
