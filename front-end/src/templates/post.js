@@ -32,6 +32,8 @@ const BlogPost = ({ data }) => {
         <div className="markdown">
           <div className="markdown-container">
           <Markdown source={article.content} escapeHtml={false} />  
+            <br/>
+            <br/>
             <hr className="uk-divider-small" />
             <br/>
             <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
