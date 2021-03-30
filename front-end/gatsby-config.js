@@ -1,10 +1,55 @@
 module.exports = { 
   siteMetadata: {
+    siteUrl: `https://lmanzanero.com/`,
     title: `Luis Manzanero`,
-    description: `Hello, I am Luis Manzanero - An aspiring enviornmental scientist, full stack web developer, and innovator`,
+    description: `Hello, I am Luis Manzanero - An aspiring environmental scientist, full stack web developer, and innovator`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    'gatsby-plugin-cname',
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: { 
+        // Exclude specific pages or groups of pages using glob parameters
+        // See: https://github.com/isaacs/minimatch
+        // The example below will exclude the single `path/to/page` and all routes beginning with `category`
+        exclude: [`/category/*`],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+  
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+        }`,
+        resolveSiteUrl: ({site}) => {
+          //Alternatively, you may also pass in an environment variable (or any location) at the beginning of your `gatsby-config.js`.
+          return site.siteMetadata.siteUrl
+        },
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.nodes.map(node => {
+            if(node.path.startsWith('/blog/')){
+              return {
+                url: `${site.siteMetadata.siteUrl}${node.path}`,
+                changefreq: `never`,
+                priority: 0.5,
+              }
+            } else {
+              return {
+                url: `${site.siteMetadata.siteUrl}${node.path}`,
+                changefreq: `weekly`,
+                priority: 0.7,
+              }
+            }
+          })
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
