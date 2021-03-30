@@ -7,6 +7,7 @@ import Moment from "react-moment"
 import Layout from "../layouts/layout"
 import Seo from "../components/seo"
 import Markdown from 'react-markdown';
+import ShareButtons from "../components/social/shareButtons"
 
 const BlogPost = ({ data }) => {  
   const article = data.strapiArticle
@@ -18,19 +19,15 @@ const BlogPost = ({ data }) => {
           description={article.Seo.metaDescription}
           image={article.Seo.shareImage.image.publicURL}
         />
-      <div className="page">
-
-        <div
-          id="banner" 
-          data-src={article.image.publicURL}
-          data-srcset={article.image.publicURL} 
-        >
+      <div className="page"> 
+        <div id="banner">
           <Img style={{width: '100%', height: '70vh', objectFit: 'cover'}} fluid={article.image.childImageSharp.fluid}/>
           <h1 className="title">{article.title}</h1>
         </div>
 
         <div className="markdown">
           <div className="markdown-container">
+          <ShareButtons/>
           <Markdown source={article.content} escapeHtml={false} />  
             <br/>
             <br/>
