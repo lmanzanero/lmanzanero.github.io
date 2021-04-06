@@ -21,12 +21,11 @@ const BlogPost = ({ data }) => {
         />
       <div className="page"> 
         <div id="banner">
-          <Img style={{width: '100%', height: '70vh', objectFit: 'cover'}} fluid={article.image.childImageSharp.fluid}/>
-          <h1 className="title">{article.title}</h1>
-        </div>
-
-        <div className="markdown">
+          <Img style={{width: '100%', height: '70vh', objectFit: 'cover'}} fluid={article.image.childImageSharp.fluid}/> 
+        </div> 
+        <div className="markdown"> 
           <div className="markdown-container">
+          <h1 className="title">{article.title}</h1>
           <ShareButtons/>
           <Markdown source={article.content} escapeHtml={false} />  
             <br/>

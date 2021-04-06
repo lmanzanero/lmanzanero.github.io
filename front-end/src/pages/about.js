@@ -15,8 +15,14 @@ const About = () => (
               <p> 
                 Hello! I am Luis Manzanero - An Aspiring environmental scientist with a passion for programming. I am from the world most beautiful country, Belize!
                 Growing up in the jungles of Belize, it is no surprise that the environment plays a major role in my life. I am always trying to learn new things and apply 
-                what I learn with the things that make me happy.
+                what I learn with the things that make me happy. Recently, I have been involved in various <a href="/projects">projects </a> related to web and mobile development. My curiosty and drive to learn
+                has brought many opportunities, which has cultivated a hollistic approach to save the environment!
               </p>
+              <br/>
+              <span>I'd love to explore ways we could collaborate on a project!</span>
+              <br/>
+              <br/>
+              <a href="mailto:manzanero.luis1995@gmail.com"><button> Contact me </button></a>
             </div>
             <div className="about-image">
               <img src="https://lh3.google.com/pw/ACtC-3d706a-8r7R9SsZsEc0lwcS1a8bHMapsg9DMkm697fEw4Jzf_1Eg0-lF29sLQev58fjuqlQthe9rYk1wMKDfGpDG0QBa0U=w1232-h1642-no?authuser=0" />
