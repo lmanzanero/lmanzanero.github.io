@@ -11,7 +11,7 @@ const Posts = ({ article, tag }) => {
           );
         }  
 
-        if( post.node.category.name == tag) {
+        if( post.node.category.name.toLowerCase() == tag) {
           return (
             <Post article={post} key={post.node.slug} />
           );
