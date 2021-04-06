@@ -9,8 +9,8 @@ import { Link } from "gatsby"
 const IndexPage = () => (
   <Layout> 
       <SEO 
-          title="Scientist, Software Developer, Innovator" 
-          description="Hello! I am Luis Manzanero - An Aspiring environmental scientist with a passion for programming. I am from the world most beautiful country, Belize!"
+          title="Scientist, Software Developer, Adventurer" 
+          description="Hello! I am Luis Manzanero - An Aspiring environmental scientist with a passion for programming. I am from the world's most beautiful country, Belize!"
           isHomePage="true"
       /> 
       <div className="page">

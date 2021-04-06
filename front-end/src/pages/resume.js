@@ -1,8 +1,10 @@
-import React from 'react';   
+import React, { useState } from 'react';   
+import Modal from '../components/modal';
 import SEO from "../components/seo"
 import Layout from '../layouts/layout';
 
 const Resume = () =>{
+  const [ isCartModalOpen, setCartModalOpen ] = useState(false);
   return (
      <Layout>
           <div className="page">
@@ -13,13 +15,31 @@ const Resume = () =>{
           <h1 className="title">Resume</h1> 
           <h4 className="sub-title">A timeline of where I have worked.</h4>
           <ul className="timeline"> 
+          <li>
+              <div className="direction-l">
+                <div className="flag-wrapper">
+                  <span className="flag">Oblip.com</span>
+                  <span className="time-wrapper"><span className="time">2018 - present</span></span>
+                </div>
+                <div className="desc">Front-end Web developer & Mobile Developer!
+                   <br/>
+                   <span className="more" onClick={() => setCartModalOpen(true)}>learn more</span>
+                   {/* <Modal
+                   isOpen={isCartModalOpen} 
+                   modalHandler={setCartModalOpen}
+                   >Hello WOrld</Modal> */}
+                </div> 
+              </div>
+            </li>
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">EcoCrypt.org</span>
                   <span className="time-wrapper"><span className="time">2018 - present</span></span>
                 </div>
-                <div className="desc">My current employment. A full Stack Developer!</div>
+                <div className="desc">My current employment. A full Stack Developer!
+                  <br/>
+                  <span className="more" onClick={() => setCartModalOpen(true)}>learn more</span></div>  
               </div>
             </li>
             <li>
@@ -28,7 +48,10 @@ const Resume = () =>{
                   <span className="flag">Belizing.com</span>
                   <span className="time-wrapper"><span className="time">2018 - 2020</span></span>
                 </div>
-                <div className="desc">Content Creator & Android Developer</div>
+                <div className="desc">Content Creator & Android Developer!
+                   <br/>
+                   <span className="more">learn more</span>
+                </div> 
               </div>
             </li>
             <li>
@@ -37,7 +60,10 @@ const Resume = () =>{
                   <span className="flag">Galen University</span>
                   <span className="time-wrapper"><span className="time">2016 - 2018</span></span>
                 </div>
-                <div className="desc">Web Developer and content creator!</div>
+                <div className="desc">Web Developer and content creator!
+                   <br/>
+                   <span className="more">learn more</span>
+                </div> 
               </div>
             </li>
             <li>
@@ -46,7 +72,10 @@ const Resume = () =>{
                   <span className="flag">DegaSolutions Inc.</span>
                   <span className="time-wrapper"><span className="time">2015 - 2016</span></span>
                 </div>
-                <div className="desc">Front-end Web & Wordpress Developer</div>
+                <div className="desc">Front-end Web & Wordpress Developer!
+                   <br/>
+                   <span className="more">learn more</span>
+                </div> 
               </div>
             </li>
           </ul> 

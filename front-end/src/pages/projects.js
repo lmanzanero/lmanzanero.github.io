@@ -42,7 +42,7 @@ const Projects = () =>{
                      <div className="project-title">{project.project_name}</div>
                       {/* <div className="category">Web Design</div> */}
                       <div className="links">
-                        <a href={project.link} target="_blank" rel="noreferrer"><button>Live Link</button></a>
+                        <a href={project.link} target="_blank" rel="noreferrer">Live Link</a>
                       </div>
                     </div>
                 </div>

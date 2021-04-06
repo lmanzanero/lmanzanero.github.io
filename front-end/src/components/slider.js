@@ -9,7 +9,7 @@ const Slider = ({data}) => {
         <div className="content">
           <h1>Hi <br/> I'm Luis Manzanero</h1>
           <p className='slider-text'>
-            Scientist . Software Developer . Innovator
+            Scientist . Software Developer . Adventurer
           </p>
         </div>
       </div>     

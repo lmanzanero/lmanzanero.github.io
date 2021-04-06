@@ -22,7 +22,7 @@ const About = () => (
               <img src="https://lh3.google.com/pw/ACtC-3d706a-8r7R9SsZsEc0lwcS1a8bHMapsg9DMkm697fEw4Jzf_1Eg0-lF29sLQev58fjuqlQthe9rYk1wMKDfGpDG0QBa0U=w1232-h1642-no?authuser=0" />
             </div>
           </div> 
-          <section> 
+          {/* <section> 
            <h2>Contact</h2>
            <div className="contact-methods">
              <a className="contact-method"> 
@@ -39,7 +39,7 @@ const About = () => (
               <p>I'd love to explore opportunities that can change the world!</p>
               <button>Contact me</button>
           </div>
-         </section>
+         </section> */}
          {/* <Link to="/about"><button>Read More</button></Link> */}
          </div>
   </Layout>
