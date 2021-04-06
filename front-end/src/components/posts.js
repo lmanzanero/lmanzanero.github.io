@@ -1,13 +1,21 @@
 import React from "react" 
 import Post from './post';
-const Posts = ({ article }) => { 
-  const allPosts = article;
+const Posts = ({ article, tag }) => { 
+  const allPosts = article;    
   return (
      <div className="blog-posts">
-      { allPosts.map((post, i) => { 
-        return (
-          <Post article={post} key={post.node.slug}/>
-        );
+      { allPosts.map((post, i) => {  
+        if( tag == 'all' ) {
+          return (
+            <Post article={post} key={post.node.slug} />
+          );
+        }  
+
+        if( post.node.category.name == tag) {
+          return (
+            <Post article={post} key={post.node.slug} />
+          );
+        } 
       })}
      </div>
   )

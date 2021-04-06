@@ -1,11 +1,17 @@
-import React from 'react';  
+import React, { useState, useEffect } from 'react';  
 import { StaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
 import Layout from '../layouts/layout'; 
 import Posts from '../components/posts';
 
 const Blog = () =>{
+  const [ tag, setTag ] = useState('all');
+  useEffect(() => {  
+    
+  }, [])
+
   const onClickItem = (e) => { 
+    setTag(e.target.innerHTML.toLowerCase());
     const options = document.querySelectorAll('.option'); 
     options.forEach(option => { 
       option.classList.remove('active');
@@ -59,7 +65,7 @@ const Blog = () =>{
               }
             `}
               render={data => ( 
-                  <Posts article={data.allStrapiArticle.edges}/>   
+                  <Posts article={data.allStrapiArticle.edges} tag={tag}/>   
               )}
             />
             </div>
