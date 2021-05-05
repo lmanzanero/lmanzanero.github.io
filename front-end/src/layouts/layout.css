@@ -489,7 +489,7 @@ button:focus {
   background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   
-  z-index: 5;
+  z-index: -1;
 }
 
 .timeline li {
@@ -500,7 +500,7 @@ button:focus {
   content: "";
   display: block;
   height: 0;
-  clear: both;
+  clear: both; 
   visibility: hidden;
 }
 
@@ -508,13 +508,13 @@ button:focus {
   position: relative;
   width: 300px;
   float: left;
-  text-align: right;
+  text-align: right; 
 }
 
 .direction-r {
   position: relative;
   width: 300px;
-  float: right;
+  float: right; 
 }
 
 .flag-wrapper {
@@ -1313,15 +1313,15 @@ button:focus {
   }
 
 
-  .modals { 
-    z-index: 17;
+  .modal { 
+    z-index: 1;
   }
   /* Resume Section */
 
   .timeline {
     width: 100%;
-   padding: 4em 0 3em 0;
-   z-index: 0;
+    padding: 4em 0 3em 0;
+    z-index: 0;
  }
  
  .timeline li {
@@ -1332,12 +1332,11 @@ button:focus {
    font-size: 1.2rem;
  }
  
- .direction-l,
- .direction-r {
+.direction-l, 
+.direction-r {
    float: none;
    width: 100%;
- 
-   text-align: center;
+   text-align: center;  
  }
  
  .flag-wrapper {
@@ -1346,7 +1345,7 @@ button:focus {
  
  .flag {
    background: rgb(255,255,255);
-   z-index: 15;
+   z-index: 0;
  }
  
  .direction-l .flag:before,
@@ -1361,8 +1360,7 @@ button:focus {
    margin-left: -9px;
    background: #fff;
    border-radius: 10px;
-   border: 4px solid palegreen;
-   z-index: 10;
+   border: 4px solid palegreen; 
  }
  
  .direction-l .flag:after,
@@ -1377,14 +1375,13 @@ button:focus {
    border: solid transparent;
    border-bottom-color: rgb(255,255,255);
    border-width: 8px;
-   pointer-events: none;
+   pointer-events: none; 
  }
- 
+
  .time-wrapper {
    display: block;
    position: relative;
-   margin: 4px 0 0 0;
-   z-index: 14;
+   margin: 4px 0 0 0; 
  }
  
  .direction-l .time-wrapper {
@@ -1402,21 +1399,17 @@ button:focus {
    background: rgb(245,245,245);
    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
    -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-   box-shadow: 0 0 1px rgba(0,0,0,0.20);
-   
-   z-index: 15;
+   box-shadow: 0 0 1px rgba(0,0,0,0.20); 
  }
  
  .direction-l .desc,
  .direction-r .desc {
    position: relative;
    margin: 1em 1em 0 1em;
-   padding: 1em;
-   
-   z-index: 15;
+   padding: 1em; 
  }
- 
 
+ 
 
 }
 

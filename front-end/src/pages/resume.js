@@ -24,10 +24,10 @@ const Resume = () =>{
                 <div className="desc">Front-end Web developer & Mobile Developer!
                    <br/>
                    <span className="more" onClick={() => setCartModalOpen(true)}>learn more</span>
-                   {/* <Modal
+                   <Modal
                    isOpen={isCartModalOpen} 
                    modalHandler={setCartModalOpen}
-                   >Hello WOrld</Modal> */}
+                   >Hello WOrld</Modal>
                 </div> 
               </div>
             </li>
@@ -50,7 +50,7 @@ const Resume = () =>{
                 </div>
                 <div className="desc">Content Creator & Android Developer!
                    <br/>
-                   <span className="more">learn more</span>
+                   <span className="more" onClick={() => setCartModalOpen(true)}>learn more</span>
                 </div> 
               </div>
             </li>
