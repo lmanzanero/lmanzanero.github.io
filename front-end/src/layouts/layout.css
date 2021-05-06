@@ -62,26 +62,31 @@ body::-webkit-scrollbar-thumb {
 
 /* Modal Content */
 .modal-content {
+  position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
+  overflow: scroll;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
+  position: absolute;
+  color: #aaaaaa; 
+  top: 5px;
+  right: 15px;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;transition: all 0.5s;
 }
 
 .close:hover,
 .close:focus {
   color: #000;
   text-decoration: none;
-  cursor: pointer;
+  cursor: pointer;transition: all 0.5s;
 }
 
 .cart-btn {
@@ -463,6 +468,34 @@ button:focus {
   outline: none;
 }
 
+/* Resume content */
+.resume-content {
+  color: #23232e;
+  text-align: left;
+  font-family: inherit;
+}
+
+.resume-content .resume-title {
+  font-size: 1.8rem;
+}
+
+.resume-content .resume-date {
+  font-size: 1rem;
+  line-height: 1.9rem;
+  color: #576e75;
+}
+
+.resume-content .resume-techs {
+  color:#35535c; 
+  line-height: 2rem;
+  font-family: monospace;
+}
+
+.resume-content .resume-desc {
+  font-size: 1rem;
+  line-height: 1.9rem;
+  color: var(--dark-color-a);
+}
 /* Resume Section */
 .timeline {
   position: relative; 
@@ -753,7 +786,7 @@ button:focus {
   position: relative;
   display: block; 
   width: 350px;
-  height: 300px;
+  height: 350px;
   border-radius: 0.5em;
   /* background: #273747; */ 
   background: var(--bg-primary);
@@ -764,7 +797,7 @@ button:focus {
 
 .project-item img {
   width: 100%; 
-  height: 100%;
+  height: 70%;
   object-fit: cover;
   transition: all 1s;
 }
@@ -779,9 +812,11 @@ button:focus {
   margin-bottom: 7em;
 } 
 
-.project-inner {    
-  position: absolute; 
+.project-inner {  
+  position: relative;   
   top: 0;
+  height: 100px;
+  background-color: var(--bg-primary); 
   padding: 1em;
   transition: all 1s;
 }
@@ -799,19 +834,21 @@ button:focus {
 }
 
 .project-inner .category { 
-  color: var(--text-primary);
+  color: palegreen;
   padding: 5px 0;
+  line-height: 1.5rem;
+  cursor: pointer;
 }
 
-.project-inner .links {    
-  position: absolute; 
-  bottom:  -240px;
-  background-color:var(--bg-primary);
+.project-inner .links {     
+  background-color:var(--dark-color-a);
+  width: 80px;
+  text-align: center; 
   border-radius: 5px;
 }
 
 .project-inner .links a {  
-  line-height: 1.7em;
+  line-height: 2em;
   font-size: 0.8rem;
   padding: 0.5em; 
   color: palegreen;
@@ -1315,6 +1352,19 @@ button:focus {
 
   .modal { 
     z-index: 1;
+    padding-top: 80px;
+  }
+
+
+    /* Modal Content */
+ .modal .modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0.2em;
+    border: 1px solid #888;
+    width: 90%;
+    height: 75vh;
   }
   /* Resume Section */
 
@@ -1336,7 +1386,7 @@ button:focus {
 .direction-r {
    float: none;
    width: 100%;
-   text-align: center;  
+   text-align: center;   
  }
  
  .flag-wrapper {
@@ -1396,7 +1446,8 @@ button:focus {
    position: relative;
    margin: 1em 0 0 0;
    padding: 1em;
-   background: rgb(245,245,245);
+   background: var(--bg-primary);
+   border-radius: 0.2em;
    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
    -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
    box-shadow: 0 0 1px rgba(0,0,0,0.20); 
