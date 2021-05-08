@@ -1,14 +1,13 @@
-import React from 'react'
-
-export default function Project({project}) {
+import React from 'react' 
+export default function Project({name, image_url, tags, project_link}) { 
   return (
-    <div key={project.id} className="project-item">
-        <img alt="" src={project.img_url.formats.medium.url}/>
+    <div className="project-item">
+        <img alt="" src={image_url}/>
         <div className="project-inner">
-          <div className="project-title">{project.project_name}</div>
-          <div className="category">#Web Design</div>
+          <div className="project-title">{name}</div>
+          <div className="category">{tags}</div>
           <div className="links">
-            <a href={project.link} target="_blank" rel="noreferrer">Live Link</a>
+            <a href={project_link} target="_blank" rel="noreferrer">Live Link</a>
           </div>
         </div>
     </div>

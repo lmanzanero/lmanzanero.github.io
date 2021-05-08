@@ -496,6 +496,17 @@ button:focus {
   line-height: 1.9rem;
   color: var(--dark-color-a);
 }
+
+.resume-content .resume-desc a {
+  color: lightseagreen;
+  transition: all 0.5s;
+}
+
+.resume-content .resume-desc a:hover {
+  color: var(--success-color);
+  transition: all 0.5s;
+  text-shadow: 0.2px 0.2px #1e1e24;
+}
 /* Resume Section */
 .timeline {
   position: relative; 

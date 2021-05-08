@@ -39,7 +39,7 @@ const Resume = () =>{
           <li>
               <div className="direction-l">
                 <div className="flag-wrapper">
-                  <span className="flag">Nubela Core Technologies</span>
+                  <span className="flag">Oblip</span>
                   <span className="time-wrapper"><span className="time">2018 - present</span></span>
                 </div>
                 <div className="desc">Front-end Web developer & Mobile Developer!
@@ -47,10 +47,10 @@ const Resume = () =>{
                    <span className="more" onClick={() => {
                      setCartModalOpen(true)
                      setResumeContent({
-                      title: 'Nubela Core Technologies',
+                      title: 'Oblip.com',
                       date: '2018-present',
                       techs: '#Javascript/TypeScript #Vue.js #React-Native #flutter #dart',
-                      desc: 'Reggie Escobar, who founded a crypto currency base application through his graduate studies in Taiwan, contacted me to assist in the development of applications needed in order to launch his startup. Since joining Oblip. Inc, I have become the lead android developer for the company\'s main payment project and worked with various web technologies. With Oblip. Inc, Ihave created Oblip.com, Oblip.me, Gift Cards Belize, and Oblip android app using various programming languages and frameworks.'
+                      desc: '<p>Reggie Escobar, who founded a crypto currency base application through his graduate studies in Taiwan, contacted me to assist in the development of applications needed in order to launch his startup. Since joining Oblip. Inc, I have become the lead android developer for the company\'s main payment project and worked with various web technologies. With Oblip. Inc, Ihave created Oblip.com, Oblip.me, <a href="https://giftcards.bz/" target="_blank">Gift Cards Belize</a>, and Oblip android app using various programming languages and frameworks.</p>'
                      })
                     }}>learn more</span>
                 </div> 
