@@ -15,8 +15,8 @@ const About = () => (
               <p> 
                 Hello! I am Luis Manzanero - An Aspiring environmental scientist with a passion for programming. I am from the world most beautiful country, Belize!
                 Growing up in the jungles of Belize, it is no surprise that the environment plays a major role in my life. I am always trying to learn new things and apply 
-                what I learn with the things that make me happy. Recently, I have been involved in various <a href="/projects">projects </a> related to web and mobile development. My curiosty and drive to learn
-                has brought many opportunities, which has cultivated a hollistic approach to save the environment!
+                what I learn with the things that make me happy and this world more sustainable. Recently, I have been involved in various <a href="/projects">projects </a> related to web and mobile development. My curiosty and drive to learn
+                has brought many <a href="/resume">opportunities</a>, which has cultivated a hollistic approach to save the environment and improve our lives through innovations with technology. I also enjoy writing about various topics which you can read on my <a href="/blog">blog</a>.
               </p>
               <br/>
               <span>I'd love to explore ways we could collaborate on a project!</span>
@@ -25,7 +25,7 @@ const About = () => (
               <a href="mailto:manzanero.luis1995@gmail.com"><button> Contact me </button></a>
             </div>
             <div className="about-image">
-              <img src="https://lh3.google.com/pw/ACtC-3d706a-8r7R9SsZsEc0lwcS1a8bHMapsg9DMkm697fEw4Jzf_1Eg0-lF29sLQev58fjuqlQthe9rYk1wMKDfGpDG0QBa0U=w1232-h1642-no?authuser=0" />
+              <img src="https://res.cloudinary.com/daeq8bixw/image/upload/v1620466620/luis_manzanero_mexico_city_5de9781087.jpg" />
             </div>
           </div> 
           {/* <section> 

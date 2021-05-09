@@ -83,7 +83,7 @@ const Projects = () => {
             <Project 
               name="EcoCrypt.org Mobile" 
               tags="#Flutter/Dart" 
-              image_url="https://res.cloudinary.com/daeq8bixw/image/upload/v1617620736/Blog_Cover_059101ed59.jpg"
+              image_url="https://res.cloudinary.com/daeq8bixw/image/upload/v1620548473/Blog_Cover_85b173ce50.png"
               project_link="https://ecocrypt.org/" />
             <Project 
               name="Belizing Payments - Android" 

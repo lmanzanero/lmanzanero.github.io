@@ -4,6 +4,7 @@ import Moment from 'react-moment';
 import Img from "gatsby-image"
 
 const Post = ({ article }) => { 
+  console.log(article)
   return (
     <Link to={`/blog/${article.node.slug}`}>
       <div className="blog-post">
