@@ -37,12 +37,12 @@ const Resume = () =>{
           <h4 className="sub-title">A timeline of where I have worked.</h4>
           <ul className="timeline"> 
           <li>
-              <div className="direction-l">
+              <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">Oblip</span>
                   <span className="time-wrapper"><span className="time">2018 - present</span></span>
                 </div>
-                <div className="desc">Front-end Web developer & Mobile Developer!
+                <div className="desc">Full stack developer & Mobile Developer!
                    <br/>
                    <span className="more" onClick={() => {
                      setCartModalOpen(true)
@@ -50,7 +50,27 @@ const Resume = () =>{
                       title: 'Oblip.com',
                       date: '2018-present',
                       techs: '#Javascript/TypeScript #Vue.js #React-Native #flutter #dart',
-                      desc: '<p>Reggie Escobar, who founded a crypto currency base application through his graduate studies in Taiwan, contacted me to assist in the development of applications needed in order to launch his startup. Since joining Oblip. Inc, I have become the lead android developer for the company\'s main payment project and worked with various web technologies. With Oblip. Inc, Ihave created Oblip.com, Oblip.me, <a href="https://giftcards.bz/" target="_blank">Gift Cards Belize</a>, and Oblip android app using various programming languages and frameworks.</p>'
+                      desc: '<p>Reggie Escobar, who founded a crypto currency base application through his graduate studies in Taiwan, contacted me to assist in the development of applications needed in order to launch his startup. Since joining Oblip. Inc, I became the lead android developer for the company\'s main payment project and worked with various web technologies. With Oblip. Inc, I have created Oblip.com, Oblip.me, and Oblip mobile app using various programming languages and frameworks.</p>'
+                     })
+                    }}>learn more</span>
+                </div> 
+              </div>
+            </li>
+            <li>
+              <div className="direction-l">
+                <div className="flag-wrapper">
+                  <span className="flag">Gift Cards Belize</span>
+                  <span className="time-wrapper"><span className="time">2020 - present</span></span>
+                </div>
+                <div className="desc">Front-end Web developer
+                   <br/>
+                   <span className="more" onClick={() => {
+                     setCartModalOpen(true)
+                     setResumeContent({
+                      title: 'Gift Cards Belize',
+                      date: '2020-present',
+                      techs: '#Javascript/TypeScript #Vue.js #Node.js #Websockets',
+                      desc: '<p>Gift Cards Belize is an ecommerce website that allows Belizeans to purchase gift cards easily, at any time of the day without a credit card. At Gift Cards Belize, I built the front end portion of the website from mocks ups using various web technologies, and currently building features to integrate with other payments methods. </p>'
                      })
                     }}>learn more</span>
                 </div> 
@@ -62,7 +82,7 @@ const Resume = () =>{
                   <span className="flag">EcoCrypt.org</span>
                   <span className="time-wrapper"><span className="time">2018 - present</span></span>
                 </div>
-                <div className="desc">My current employment. A full Stack Developer!
+                <div className="desc">Full Stack Web Developer
                   <br/>
                   <span className="more" onClick={() => {
                     setCartModalOpen(true)
@@ -81,7 +101,7 @@ const Resume = () =>{
                   <span className="flag">Belizing.com</span>
                   <span className="time-wrapper"><span className="time">2018 - 2020</span></span>
                 </div>
-                <div className="desc">Content Creator & Android Developer!
+                <div className="desc">Content Creator & Android Developer
                    <br/>
                    <span className="more" onClick={() => {
                      setCartModalOpen(true)
@@ -101,7 +121,7 @@ const Resume = () =>{
                   <span className="flag">Galen University</span>
                   <span className="time-wrapper"><span className="time">2016 - 2018</span></span>
                 </div>
-                <div className="desc">Web Developer and content creator!
+                <div className="desc">Web Developer and content creator
                    <br/>
                    <span className="more" onClick={() => {
                      setCartModalOpen(true)
@@ -121,7 +141,7 @@ const Resume = () =>{
                   <span className="flag">DegaSolutions Inc.</span>
                   <span className="time-wrapper"><span className="time">2015 - 2016</span></span>
                 </div>
-                <div className="desc">Front-end Web & Wordpress Developer!
+                <div className="desc">Front-end Web & Wordpress Developer
                    <br/>
                    <span className="more" onClick={() => {
                      setCartModalOpen(true)

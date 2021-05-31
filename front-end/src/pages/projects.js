@@ -81,6 +81,11 @@ const Projects = () => {
               image_url="https://res.cloudinary.com/daeq8bixw/image/upload/v1620461285/Screenshot_2021_05_08_at_16_07_54_892743a8fe.png"
               project_link="https://bettapay.app/" />
             <Project 
+            name="BettaPay Mobile" 
+            tags="#Flutter/Dart" 
+            image_url="https://res.cloudinary.com/daeq8bixw/image/upload/v1622399770/Screenshot_2021_05_31_at_02_34_10_e4db41c0eb.png"
+            project_link="https://bettapay.app/" />
+            <Project 
               name="EcoCrypt.org Mobile" 
               tags="#Flutter/Dart" 
               image_url="https://res.cloudinary.com/daeq8bixw/image/upload/v1620548473/Blog_Cover_85b173ce50.png"
@@ -90,6 +95,11 @@ const Projects = () => {
               tags="#Kotlin" 
               image_url="https://res.cloudinary.com/daeq8bixw/image/upload/v1620460534/belizing_payments_bdb861e244.png"
               project_link="hhttps://payments.belizing.com/" />
+            <Project 
+              name="JavaScript Realtime Quiz" 
+              tags="#JavaScript #Node.js #Socket.io" 
+              image_url="https://res.cloudinary.com/daeq8bixw/image/upload/v1622399771/Screenshot_2021_05_28_at_01_11_53_d46b1e8513.png"
+              project_link="http://real-time-games-staging.herokuapp.com/real-time-quiz" />
             <Project 
               name="JavaScript Calculator" 
               tags="#JavaScript" 

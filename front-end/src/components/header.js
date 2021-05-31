@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
 			<ul className="navbar-nav">
 				<li className="logo">
 					<Link to="/" className="header-logo">  
-							 <img src="https://avatars2.githubusercontent.com/u/20497361?s=400&u=fcce070b780d1229d7d97890113a85f00cf4a049&v=4" alt="Luis Manzanero"/> 
+							 <img src="https://res.cloudinary.com/daeq8bixw/image/upload/v1622455008/luis_manzanero_edbee4271a.png" alt="Luis Manzanero"/> 
 					</Link>
 				</li>
 				<li className="nav-item">

@@ -13,13 +13,13 @@ const About = () => (
           <div className="about-section-inner">
             <div className="about-content">
               <p> 
-                Hello! I am Luis Manzanero - An Aspiring environmental scientist with a passion for programming. I am from the world most beautiful country, Belize!
+                Hello! I am Luis Manzanero - An Aspiring environmental scientist and experienced full stack web and mobile developer. I am from the world most beautiful country, Belize!
                 Growing up in the jungles of Belize, it is no surprise that the environment plays a major role in my life. I am always trying to learn new things and apply 
-                what I learn with the things that make me happy and this world more sustainable. Recently, I have been involved in various <a href="/projects">projects </a> related to web and mobile development. My curiosty and drive to learn
+                what I learn with the things that make me happy and this world more sustainable. Recently, I have been involved in various <a href="/projects">projects </a> related to blockchain, web and mobile development. My curiosty and drive to learn
                 has brought many <a href="/resume">opportunities</a>, which has cultivated a hollistic approach to save the environment and improve our lives through innovations with technology. I also enjoy writing about various topics which you can read on my <a href="/blog">blog</a>.
               </p>
               <br/>
-              <span>I'd love to explore ways we could collaborate on a project!</span>
+              <span>I'd love to explore ways we can collaborate on a project!</span>
               <br/>
               <br/>
               <a href="mailto:manzanero.luis1995@gmail.com"><button> Contact me </button></a>
