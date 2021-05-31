@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/login.js"],"names":["Login"],"mappings":"4FAAA,gCAQeA,UAND,kBACZ,6BACE","file":"component---src-pages-login-js-b632e35f2dd1c4c7bcbd.js","sourcesContent":["import React from \"react\"  \n\nconst Login = () => (\n  <div>\n    <h1>Login</h1>\n  </div>\n)\n\nexport default Login;"],"sourceRoot":""}
